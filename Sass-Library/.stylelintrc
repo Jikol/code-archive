@@ -1,0 +1,77 @@
+{
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-standard",
+    "stylelint-config-prettier",
+    "stylelint-config-standard-scss",
+    "stylelint-config-prettier-scss",
+    "stylelint-config-idiomatic-order"
+  ],
+  "plugins": ["stylelint-order", "stylelint-scss"],
+  "rules": {
+    "indentation": 2,
+    "no-eol-whitespace": true,
+    "string-quotes": "double",
+    "number-leading-zero": "always",
+    "max-empty-lines": [1, { "ignore": ["comments"] }],
+    "declaration-block-no-duplicate-properties": true,
+    "declaration-block-no-redundant-longhand-properties": true,
+    "block-no-empty": null,
+    "max-nesting-depth": 4,
+    "no-descending-specificity": null,
+    "no-empty-source": null,
+    "no-invalid-double-slash-comments": null,
+    "no-unknown-animations": true,
+    "rule-empty-line-before": [
+      "always",
+      {
+        "except": ["first-nested"],
+        "ignore": ["after-comment"]
+      }
+    ],
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "except": ["first-nested"],
+        "ignore": ["after-comment"],
+        "ignoreAtRules": ["import", "include", "use", "forward", "if", "else"]
+      }
+    ],
+    "custom-property-empty-line-before": [
+      "always",
+      {
+        "except": ["after-custom-property", "first-nested"]
+      }
+    ],
+    "declaration-empty-line-before": [
+      "always",
+      {
+        "except": ["after-declaration", "first-nested"],
+        "ignore": ["after-comment"]
+      }
+    ],
+    "block-closing-brace-empty-line-before": "never",
+    "declaration-colon-space-after": "always",
+    "declaration-colon-space-before": "never",
+    "value-list-comma-newline-after": "always-multi-line",
+    "value-list-comma-space-after": "always-single-line",
+    "value-list-comma-space-before": "never",
+    "function-no-unknown": [
+      true,
+      {
+        "ignoreFunctions": [
+          "/^list/",
+          "/^map/",
+          "/^math/",
+          "/^string/",
+          "/^normalize/",
+          "/^f/",
+          "/^grid/",
+          "/^strip/"
+        ]
+      }
+    ],
+    "order/order": ["custom-properties", "declarations"]
+  },
+  "ignoreFiles": ["src/scss/vendors/*.scss"]
+}

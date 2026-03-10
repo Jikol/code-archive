@@ -1,0 +1,14 @@
+// -----------------------------------------------------------------------------
+// Stylesheet file for @font-face declaration
+// -----------------------------------------------------------------------------
+
+/// Define fonts as sass map with additional information
+$fonts: (
+  "Halvetica": (
+    "font-family": serif,
+    "src": null,
+    "cap-height": 0,
+    "weight": normal,
+    "style": normal,
+  ),
+);

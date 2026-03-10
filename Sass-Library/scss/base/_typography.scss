@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------------
+// Stylesheet file for typography control
+// -----------------------------------------------------------------------------
+
+@use "../helpers/functions" as f;
+@use "../helpers/variables" as v;
+
+/// Vertical rhythm grid unit
+/// @param {Number} $multiplier [1] - Vertical rhythm multiplier
+/// @return {Number} [rem] - Vertical rhythm unit
+/// @example
+@function grid-unit($multiplier: 1) {
+  @return #{f.strip-unit(v.$base-font-size) * $multiplier * v.$base-line-height * 0.0625}rem;
+}
+
+/// Apply to root html element
+html {
+  font-size: v.$base-font-size;
+  line-height: grid-unit();
+}
+
+/// Apply to headings
+h1 {
+  margin-bottom: grid-unit(2);
+}

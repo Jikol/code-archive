@@ -1,0 +1,512 @@
+// -----------------------------------------------------------------------------
+// Stylesheet file for application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+@use "sass:list";
+@use "sass:map";
+@use "sass:string";
+@use "sass:meta";
+
+@use "functions" as f;
+
+/// Event wrapper for all event type of user interaction on element
+/// @example
+@mixin on-event {
+  @media (hover: hover) and (pointer: fine) {
+    &:not([disabled]):hover,
+    &:not([disabled]):focus-visible {
+      @content;
+    }
+  }
+
+  &:not([disabled]):active,
+  &:not([disabled]):focus {
+    @content;
+  }
+}
+
+/// Hover wrapper for all event type of user interaction on element
+/// @example
+@mixin on-hover {
+  @media (hover: hover) and (pointer: fine) {
+    &:not([disabled]):hover,
+    &:not([disabled]):focus-visible {
+      @content;
+    }
+  }
+}
+
+/// Active wrapper for all event type of user interaction on element
+/// @example
+@mixin on-active {
+  &:not([disabled]):active,
+  &:not([disabled]):focus {
+    @content;
+  }
+}
+
+/// One-line fill bevavior for element size
+/// @param {String} $width [false] - set width property
+/// @param {String} $height [false] - set height property
+/// @example
+@mixin size($width: false, $height: false) {
+  @if $width and $height {
+    width: $width;
+    height: $height;
+  } @else if $width and $height == false {
+    width: $width;
+    height: $width;
+  } @else {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/// One-line center element
+/// @param {String} $grid [false] - use flex or grid display for center
+/// @example
+@mixin center($grid: false) {
+  @if $grid {
+    display: grid;
+    place-items: center center;
+  } @else {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/// One-line center element with positioning by translate
+/// @param {Map} $translate [false] - sass map with left and top keys
+/// @example
+@mixin center-translate($translate: false) {
+  $valid-props: top, left;
+  $translatetop: -50%;
+  $translateleft: -50%;
+  @if not $translate {
+    transform: translate($translatetop, $translateleft);
+  } @else {
+    @each $prop, $val in $translate {
+      @if not list.index($valid-props, $prop) {
+        @error "#{$prop} is not `top` or `left` property. Expected on of #{$valid-props}.";
+      }
+
+      $operator: string.slice(#{$val}, 1, 1);
+      $slicechars: 2;
+      @if $operator != "-" {
+        $operator: "+";
+        $slicechars: 0;
+      }
+      @if $prop == "top" {
+        $translatetop: -50% #{$operator} #{string.slice(#{$val}, $slicechars)};
+      }
+      @if $prop == "left" {
+        $translateleft: -50% #{$operator} #{string.slice(#{$val}, $slicechars)};
+      }
+    }
+
+    transform: translate(calc(#{$translateleft}), calc(#{$translatetop}));
+  }
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+/// Flexbox simplifier
+/// @param {List} $prop [false] - List of flexbox properties: {
+///   inline, column, column-reverse, row-reverse, wrap, wrap-reverse
+/// }
+/// @example
+@mixin flex($prop: false) {
+  $attr: (
+    "display": flex,
+    "flex-direction": false,
+    "flex-wrap": false,
+    "flex-flow": false,
+  );
+
+  @if not $prop {
+    display: map.get($attr, "display");
+  } @else {
+    @if list.index($prop, inline) {
+      $attr: map.set($attr, "display", inline-flex);
+    }
+
+    @if list.index($prop, column) {
+      @if list.index($prop, wrap) {
+        $attr: map.set($attr, "flex-flow", column wrap);
+      } @else if list.index($prop, wrap-reverse) {
+        $attr: map.set($attr, "flex-flow", column wrap-reverse);
+      } @else {
+        $attr: map.set($attr, "flex-direction", column);
+      }
+    }
+
+    @if list.index($prop, column-reverse) {
+      @if list.index($prop, wrap) {
+        $attr: map.set($attr, "flex-flow", column-reverse wrap);
+      } @else if list.index($prop, wrap-reverse) {
+        $attr: map.set($attr, "flex-flow", column-reverse wrap-reverse);
+      } @else {
+        $attr: map.set($attr, "flex-direction", column-reverse);
+      }
+    }
+
+    @if list.index($prop, row-reverse) {
+      @if list.index($prop, wrap) {
+        $attr: map.set($attr, "flex-flow", row-reverse wrap);
+      } @else if list.index($prop, wrap-reverse) {
+        $attr: map.set($attr, "flex-flow", row-reverse wrap-reverse);
+      } @else {
+        $attr: map.set($attr, "flex-direction", row-reverse);
+      }
+    }
+
+    @if list.index($prop, wrap) and not
+      (
+        list.index($prop, column) or
+          list.index($prop, column-reverse) or
+          list.index($prop, row-reverse)
+      )
+    {
+      $attr: map.set($attr, "flex-wrap", wrap);
+    }
+    @if list.index($prop, wrap-reverse) and not
+      (
+        list.index($prop, column) or
+          list.index($prop, column-reverse) or
+          list.index($prop, row-reverse)
+      )
+    {
+      $attr: map.set($attr, "flex-wrap", wrap-reverse);
+    }
+
+    display: map.get($attr, "display");
+    @if map.get($attr, "flex-direction") {
+      flex-direction: map.get($attr, "flex-direction");
+    }
+    @if map.get($attr, "flex-wrap") {
+      flex-wrap: map.get($attr, "flex-wrap");
+    }
+    @if map.get($attr, "flex-flow") {
+      flex-flow: map.get($attr, "flex-flow");
+    }
+  }
+}
+
+/// Flexbox place simplifier
+/// @param {List} $prop - Flexbox properties for aligning child elements: {
+///   flex-start, flex-end, center, space-between, space-around, space-evenly
+///   stretch, baseline
+/// }
+/// @param {String} $content - Align whole children elements in flex container: {
+///   flex-start, flex-end, center, space-between, space-around, space-evenly
+///   baseline
+/// }
+/// @example @include flex-place(flex-end center, space-around) -> {
+///   justify-content: flex-end;
+///   align-items: center;
+///   align-content: space-around;
+/// }
+@mixin flex-place($items, $content: false) {
+  $attr: (
+    "justify-content": false,
+    "align-items": false,
+    "align-content": false,
+  );
+  $justify-content: flex-start, flex-end, center, space-between, space-around, space-evenly;
+  $align-items: stretch, flex-start, flex-end, center, baseline;
+  $align-content: flex-start, flex-end, center, space-between, space-around, space-evenly, stretch;
+
+  @if list.length($items) < 2 {
+    $attr: map.set($attr, "justify-content", list.nth($items, 1));
+    $attr: map.set($attr, "align-items", list.nth($items, 2));
+  } @else if list.length($items) == 2 {
+    @if list.nth($items, 1) == "unset" {
+      $attr: map.set($attr, "align-items", list.nth($items, 2));
+    } @else if list.nth($items, 2) == "unset" {
+      $attr: map.set($attr, "justify-content", list.nth($items, 1));
+    } @else {
+      $attr: map.set($attr, "justify-content", list.nth($items, 1));
+      $attr: map.set($attr, "align-items", list.nth($items, 2));
+    }
+  } @else {
+    $length: list.length($items);
+
+    @error "`#{$items}` may have a maximum of 2 properties. #{$length} found.";
+  }
+
+  @if $content {
+    $attr: map.set($attr, "align-content", $content);
+  }
+
+  @if map.get($attr, "justify-content") {
+    @if not list.index($justify-content, map.get($attr, "justify-content")) {
+      @error "#{map.get($attr, "justify-content")} is not valid " +
+        "justify-content property. Expected on of #{$justify-content}.";
+    }
+
+    justify-content: map.get($attr, "justify-content");
+  }
+  @if map.get($attr, "align-items") {
+    @if not list.index($align-items, map.get($attr, "align-items")) {
+      @error "#{map.get($attr, "align-items")} is not valid " +
+        "align-items property. Expected on of #{$align-items}.";
+    }
+
+    align-items: map.get($attr, "align-items");
+  }
+  @if map.get($attr, "align-content") {
+    @if not list.index($align-content, map.get($attr, "align-content")) {
+      @error "#{map.get($attr, "align-content")} is not valid " +
+        "align-content property. Expected on of #{$align-content}.";
+    }
+
+    align-content: map.get($attr, "align-content");
+  }
+}
+
+/// Gridbox simplifier
+/// @param {String, List} $props - properties associated with setting up the grid: {
+///   inline, (<grid-template-rows>), (<grid-template-columns>), (<grid-template-areas>)
+/// }
+/// @example @include grid(inline,
+///   (rows, 1fr auto minmax(100px, 1fr)), (columns, auto min-content),
+///   (1 "header header header"),
+///   (2 "main . sidebar"),
+/// );
+@mixin grid($props...) {
+  $attr: (
+    "display": grid,
+    "grid-template-rows": false,
+    "grid-template-columns": false,
+    "grid-template-areas": false,
+  );
+
+  @if not $props {
+    display: map.get($attr, "display");
+  } @else {
+    $areas: ();
+
+    @each $prop in $props {
+      @if list.index($prop, inline) {
+        $attr: map.set($attr, "display", inline-grid);
+      }
+
+      @if meta.type-of($prop) == "list" {
+        @if list.index($prop, rows) {
+          $prop: f.list-remove($prop, rows);
+          $attr: map.set($attr, "grid-template-rows", $prop);
+        }
+
+        @if list.index($prop, columns) {
+          $prop: f.list-remove($prop, columns);
+          $attr: map.set($attr, "grid-template-columns", $prop);
+        }
+
+        @if meta.type-of(list.nth($prop, 1)) == "number" {
+          $prop: f.list-remove($prop, 1);
+          $areas: list.append($areas, $prop);
+          $attr: map.set($attr, "grid-template-areas", $areas);
+        }
+      }
+    }
+
+    display: map.get($attr, "display");
+    @if map.get($attr, "grid-template-rows") {
+      grid-template-rows: map.get($attr, "grid-template-rows");
+    }
+    @if map.get($attr, "grid-template-columns") {
+      grid-template-columns: map.get($attr, "grid-template-columns");
+    }
+    @if map.get($attr, "grid-template-areas") {
+      grid-template-areas: map.get($attr, "grid-template-areas");
+    }
+  }
+}
+
+/// Grid place simplifier
+/// @param {List} $items (align, justify) - define align and justify position of grid items: {
+///   start, end, center, stretch, baseline
+/// }
+/// @param {List} $content [false] (align, justify) - define align and justify position of
+/// grid container in parent: {
+///   start, end, center, stretch, space-around, space-between, space-evenly
+/// }
+/// @example @include grid-place(unset end, center start) -> {
+///   align-items: end;
+///   place-content: start center;
+/// }
+@mixin grid-place($items, $content: false) {
+  $attr: (
+    "justify-items": false,
+    "align-items": false,
+    "place-items": false,
+    "justify-content": false,
+    "align-content": false,
+    "place-content": false,
+  );
+  $justify-items: start, end, center, stretch;
+  $align-items: start, end, center, stretch;
+  $place-items: $justify-items;
+  $justify-content: start, end, center, stretch, space-around, space-between, space-evenly;
+  $align-content: start, end, center, stretch, space-around, space-between, space-evenly;
+  $place-content: $justify-content;
+
+  @if list.length($items) < 2 {
+    $attr: map.set($attr, "place-items", $items);
+  } @else if list.length($items) == 2 {
+    @if list.nth($items, 1) == "unset" {
+      $attr: map.set($attr, "align-items", list.nth($items, 2));
+    } @else if list.nth($items, 2) == "unset" {
+      $attr: map.set($attr, "justify-items", list.nth($items, 1));
+    } @else {
+      $attr: map.set($attr, "place-items", list.nth($items, 2) list.nth($items, 1));
+    }
+  } @else {
+    $length: list.length($items);
+
+    @error "`#{$items}` may have a maximum of 2 properties. #{$length} found.";
+  }
+  @if $content {
+    @if list.length($content) < 2 {
+      $attr: map.set($attr, "place-content", $content);
+    } @else if list.length($content) == 2 {
+      @if list.nth($content, 1) == "unset" {
+        $attr: map.set($attr, "align-content", list.nth($content, 2));
+      } @else if list.nth($content, 2) == "unset" {
+        $attr: map.set($attr, "justify-content", list.nth($content, 1));
+      } @else {
+        $attr: map.set($attr, "place-content", list.nth($content, 2) list.nth($content, 1));
+      }
+    } @else {
+      $length: list.length($content);
+
+      @error "`#{$content}` may have a maximum of 2 properties. #{$length} found.";
+    }
+  }
+
+  @if map.get($attr, "justify-items") {
+    @if not list.index($justify-items, map.get($attr, "justify-items")) {
+      @error "#{map.get($attr, "justify-items")} is not valid " +
+        "justify-items property. Expected on of #{$justify-items}.";
+    }
+
+    justify-items: map.get($attr, "justify-items");
+  }
+  @if map.get($attr, "align-items") {
+    @if not list.index($align-items, map.get($attr, "align-items")) {
+      @error "#{map.get($attr, "align-items")} is not valid " +
+        "align-items property. Expected on of #{$align-items}.";
+    }
+
+    align-items: map.get($attr, "align-items");
+  }
+  @if map.get($attr, "place-items") {
+    $map-items: map.get($attr, "place-items");
+    @if list.length($map-items) == 2 {
+      @if not list.index($place-items, list.nth($map-items, 1)) {
+        @error "#{list.nth($map-items, 1)} is not valid " +
+          "place-items property. Expected on of #{$place-items}.";
+      }
+      @if not list.index($place-items, list.nth($map-items, 2)) {
+        @error "#{list.nth($map-items, 2)} is not valid " +
+          "place-items property. Expected on of #{$place-items}.";
+      }
+    } @else {
+      @if not list.index($place-items, map.get($attr, "place-items")) {
+        @error "#{map.get($attr, "place-items")} is not valid " +
+          "place-items property. Expected on of #{$place-items}.";
+      }
+    }
+
+    place-items: map.get($attr, "place-items");
+  }
+  @if map.get($attr, "justify-content") {
+    @if not list.index($justify-content, map.get($attr, "justify-content")) {
+      @error "#{map.get($attr, "justify-content")} is not valid " +
+        "justify-content property. Expected on of #{$justify-content}.";
+    }
+
+    justify-content: map.get($attr, "justify-content");
+  }
+  @if map.get($attr, "align-content") {
+    @if not list.index($align-content, map.get($attr, "align-content")) {
+      @error "#{map.get($attr, "align-content")} is not valid " +
+        "align-content property. Expected on of #{$align-content}.";
+    }
+
+    align-content: map.get($attr, "align-content");
+  }
+  @if map.get($attr, "place-content") {
+    $map-items: map.get($attr, "place-content");
+    @if list.length($map-items) == 2 {
+      @if not list.index($place-content, list.nth($map-items, 1)) {
+        @error "#{list.nth($map-items, 1)} is not valid " +
+          "place-content property. Expected on of #{$place-content}.";
+      }
+      @if not list.index($place-content, list.nth($map-items, 2)) {
+        @error "#{list.nth($map-items, 2)} is not valid " +
+          "place-content property. Expected on of #{$place-content}.";
+      }
+    } @else {
+      @if not list.index($place-content, map.get($attr, "place-content")) {
+        @error "#{map.get($attr, "place-content")} is not valid " +
+          "place-content property. Expected on of #{$place-content}.";
+      }
+    }
+
+    place-content: map.get($attr, "place-content");
+  }
+}
+
+/// Shorthand for auto sized grid columns
+/// @param {String} $size - define size for each column
+/// @param {Bool} $static [false] - if each column may have static size
+/// @param {String} $fill [auto-fill] -
+/// @example
+@mixin fluid-columns($size, $static: false, $fill: auto-fill) {
+  @if not $static {
+    grid-template-columns: repeat($fill, minmax($size, 1fr));
+  } @else {
+    grid-template-columns: repeat($fill, $size);
+  }
+}
+
+/// Pseudo element boost for new stacking context with uniform styling
+/// @param {Bool} $parent-pos [false] - position of parent element
+/// @param {Bool} $child-pos [false] - position of child element
+/// @param {Bool} $pseudo-type [false] - choose which pseudo element may mixin affect
+/// @example
+@mixin pseudo($pseudo-type: false, $parent-pos: relative, $child-pos: absolute) {
+  @if not $pseudo-type {
+    &::after,
+    &::before {
+      position: $child-pos;
+      z-index: -1;
+      border-radius: inherit;
+      content: "";
+      inset: 0;
+      @content;
+    }
+  } @else {
+    $valid-props: after before;
+    @if not list.index($valid-props, $pseudo-type) {
+      @error "#{$pseudo-type} is not `after` or `before` property. Expected on of #{$valid-props}.";
+    }
+
+    &::#{$pseudo-type} {
+      position: $child-pos;
+      z-index: -1;
+      border-radius: inherit;
+      content: "";
+      inset: 0;
+      @content;
+    }
+  }
+
+  position: $parent-pos;
+  z-index: 0;
+  overflow: hidden;
+  isolation: isolate;
+}

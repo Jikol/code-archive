@@ -1,0 +1,186 @@
+// -----------------------------------------------------------------------------
+// Stylesheet file for global styles and custom reset
+// -----------------------------------------------------------------------------
+
+/**
+ * Inspiration for reset rules:
+ * https://www.joshwcomeau.com/css/custom-css-reset/#the-css-reset
+ * https://piccalil.li/blog/a-modern-css-reset/
+ * https://github.com/jensimmons/cssremedy
+**/
+
+/**
+ * Remove default margin
+**/
+* {
+  margin-block: 0;
+  margin-inline: 0;
+}
+
+/**
+ * Set up a usable box model without computed height and width with box model
+**/
+html,
+body {
+  height: 100%;
+}
+
+/**
+ * Set core root defaults
+**/
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/**
+ * Add custom font size base and line height
+ * Improve text rendering
+ * Allow percentage-based heights in the application
+**/
+html {
+  -webkit-font-smoothing: antialiased;
+  hyphens: auto;
+  /* stylelint-disable */
+  text-rendering: optimizeSpeed;
+  /* stylelint-enable */
+}
+
+/**
+ * Improve media defaults
+**/
+img,
+video,
+canvas,
+svg,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+/**
+ * Fix correct display for new picture element
+**/
+picture {
+  display: contents;
+}
+
+source {
+  display: none;
+}
+
+/**
+ * Keep intrinsic aspect ratio
+**/
+img, svg, video, canvas {
+  height: auto;
+}
+
+/**
+ * Fix static width of audio element
+**/
+audio {
+  width: 100%;
+}
+
+/**
+ * Remove built-in form typography styles
+**/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/**
+ * Avoid text overflows
+**/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/**
+ * Disable default behavior of links
+**/
+a {
+  text-decoration: none;
+}
+
+/**
+ * Define styled scrollbar for unified look with other elements
+**/
+*::-webkit-scrollbar {
+  width: 10px;
+  margin: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: black;
+}
+
+*::-webkit-scrollbar-thumb {
+  border: 3px solid black;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/**
+ * Create a root stacking context for React root component
+**/
+#root {
+  isolation: isolate;
+}
+
+/**
+ * Disable blue highlight on touch devices for buttons and input
+**/
+button,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/**
+ * Remove all animations, transitions and smooth scroll for people that prefer not to see them
+**/
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/**
+ * Maintain hidden behavior for overriding display value
+**/
+[hidden] {
+  display: none;
+}
+
+/**
+ * Disable overflow formatted text
+**/
+pre {
+  white-space: pre-wrap;
+}

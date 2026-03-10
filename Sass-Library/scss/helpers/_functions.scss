@@ -1,0 +1,167 @@
+// -----------------------------------------------------------------------------
+// Stylesheet file for application-wide Sass functions.
+// -----------------------------------------------------------------------------
+
+@use "sass:list";
+@use "sass:math";
+@use "sass:meta";
+
+/// Funtion for summary of variables
+/// @param {Any} $numbers - Variable arguments for sum
+/// @return {Number} - Unitless number represent summary of all arguments
+/// @example
+@function sum($numbers...) {
+  $sum: 0;
+
+  @each $number in $numbers {
+    $sum: $sum + $number;
+  }
+
+  @return $sum;
+}
+
+/// Remove the unit of a length
+/// @param {Number} $number - Number to remove unit from
+/// @return {Number} - Unitless number
+/// @example
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return math.div($number, ($number * 0 + 1));
+  }
+
+  @return $number;
+}
+
+/// Convert pixels to rems according to base font size
+/// @param {Number} $value - Number in pixels for convert
+/// @param {Number} $base - Number in pixels as base font size
+/// @return {Number} [rem] - Converted value in rems
+@function px-to-rem($value, $base) {
+  $new-value: 0;
+  $new-base: 0;
+  @if meta.type-of($value) != "number" or meta.type-of($base) != "number" {
+    @error "#{$value} and #{$base} might be both number with `px`, " +
+      "or unitless number. #{meta.type-of($value)} and #{meta.type-of($base)} found";
+  } @else {
+    $valid-number: true;
+    @if not math.is-unitless($value) {
+      @if math.unit($value) != "px" {
+        $valid-number: false;
+      } @else {
+        $new-value: strip-unit($value);
+      }
+    } @else {
+      $new-value: $value;
+    }
+    @if not math.is-unitless($base) {
+      @if math.unit($base) != "px" {
+        $valid-number: false;
+      } @else {
+        $new-base: strip-unit($base);
+      }
+    } @else {
+      $new-base: $base;
+    }
+    @if not $valid-number {
+      @error "#{$value} and #{$base} might be both number with `px`, or unitless number. " +
+        "#{meta.type-of($value)}[#{math.unit($value)}] and " +
+        "#{meta.type-of($base)}[#{math.unit($base)}] found";
+    }
+  }
+
+  @return $new-value / $new-base * 1rem;
+}
+
+/// Sort list
+/// @param {List} $list - List to sort
+/// @param {String} $type - If list will be sorted in ascended or desceded way
+/// @return {List} - Sorted list
+@function list-sort($list, $type: desc) {
+  $type-available: desc, asc;
+  @if not list.index($type-available, $type) {
+    @error "#{$type} is not valid `type-available` property. Expected on " +
+      "of #{$type-available}.";
+  }
+
+  $new-list: ();
+
+  @while list.length($list) > 0 {
+    $value: list.nth($list, 1);
+
+    @each $item in $list {
+      @if $type == "asc" {
+        @if $item < $value {
+          $value: $item;
+        }
+      } @else {
+        @if $item > $value {
+          $value: $item;
+        }
+      }
+    }
+
+    $new-list: list.append($new-list, $value);
+    $list: list-remove($list, list.index($list, $value));
+  }
+
+  @return $new-list;
+}
+
+/// Remove item from list
+/// @param {List} $list - List from which elements need to be removed
+/// @param {Number/String/List} $removal - Index, value or list of mentioned as remove represent
+/// @return {List} - Supplement of $list and $removal
+@function list-remove($list, $removal) {
+  $nth: ();
+  $new-list: ();
+  @if meta.type-of($removal) == "string" {
+    @for $i from 1 through list.length($list) {
+      @if #{list.nth($list, $i)} == $removal {
+        $nth: list.append($nth, $i);
+      }
+    }
+  } @else if meta.type-of($removal) == "number" {
+    @if $removal < 0 {
+      $nth: list.append($nth, list.length($list) + $removal + 1);
+    } @else {
+      $nth: list.append($nth, $removal);
+    }
+  } @else if meta.type-of($removal) == "list" {
+    $list-of-numbers: false;
+
+    @each $item in $removal {
+      @if meta.type-of($item) == "number" {
+        $list-of-numbers: true;
+      }
+    }
+    @if $list-of-numbers {
+      $removal: list-sort($removal);
+    }
+
+    $new-list: $list;
+
+    @each $item in $removal {
+      $new-list: list-remove($new-list, $item);
+    }
+
+    @return $new-list;
+  } @else {
+    @error "#{$nth} might be `number` or `string`, " +
+      "#{meta.type-of($nth)} found";
+  }
+
+  @for $i from 1 through list.length($list) {
+    $keep: true;
+
+    @each $item in $nth {
+      @if $i == $item {
+        $keep: false;
+      }
+    }
+    @if $keep {
+      $new-list: list.append($new-list, list.nth($list, $i));
+    }
+  }
+
+  @return $new-list;
+}

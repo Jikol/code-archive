@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// Stylesheet file for application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Base font and line height reset
+$base-font-size: 16px; /* ~1rem */
+$base-line-height: 1.5;
+
+// pokud font-size bude přesahovat velikost base line, zvětšit base line u jeden multiply a udělat přepočet paddingu a marginu
+// při změne font size se udělá přepočet paddingu a marginu
