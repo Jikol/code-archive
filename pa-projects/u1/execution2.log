@@ -1,0 +1,39 @@
+Process count: 16 | Skip symmetric: True
+Cost: 3795.0 | Permutations: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9) | Elapsed time: 0:00:00.093522
+Cost: 3822.0 | Permutations: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9) | Elapsed time: 0:00:00.097449
+Cost: 3742.0 | Permutations: (4, 0, 1, 2, 3, 5, 6, 7, 8, 9) | Elapsed time: 0:00:00.102053
+Cost: 3773.0 | Permutations: (4, 0, 1, 2, 3, 5, 6, 7, 8, 9) | Elapsed time: 0:00:00.104820
+Cost: 3760.0 | Permutations: (4, 0, 1, 2, 3, 5, 6, 7, 8, 9) | Elapsed time: 0:00:00.108772
+Cost: 3725.0 | Permutations: (4, 0, 1, 2, 3, 5, 6, 7, 9, 8) | Elapsed time: 0:00:00.136961
+Cost: 3724.0 | Permutations: (1, 0, 2, 3, 4, 6, 7, 5, 9, 8) | Elapsed time: 0:00:00.318206
+Cost: 3721.0 | Permutations: (3, 0, 1, 2, 4, 6, 7, 9, 5, 8) | Elapsed time: 0:00:00.333898
+Cost: 3714.0 | Permutations: (0, 1, 2, 3, 4, 6, 7, 5, 8, 9) | Elapsed time: 0:00:00.350923
+Cost: 3697.0 | Permutations: (0, 1, 2, 3, 4, 6, 7, 5, 9, 8) | Elapsed time: 0:00:00.378535
+Cost: 3684.0 | Permutations: (4, 0, 1, 2, 3, 6, 5, 7, 9, 8) | Elapsed time: 0:00:00.407629
+Cost: 3635.0 | Permutations: (4, 0, 1, 2, 3, 6, 7, 9, 5, 8) | Elapsed time: 0:00:00.532462
+Cost: 3633.0 | Permutations: (4, 0, 1, 2, 5, 6, 7, 3, 9, 8) | Elapsed time: 0:00:01.221417
+Cost: 3627.0 | Permutations: (1, 0, 2, 4, 7, 6, 3, 9, 5, 8) | Elapsed time: 0:00:02.751522
+Cost: 3624.0 | Permutations: (0, 1, 2, 4, 6, 7, 3, 5, 9, 8) | Elapsed time: 0:00:02.818946
+Cost: 3615.0 | Permutations: (0, 1, 2, 4, 6, 7, 3, 9, 5, 8) | Elapsed time: 0:00:02.837315
+Cost: 3609.0 | Permutations: (0, 1, 2, 4, 7, 6, 3, 5, 9, 8) | Elapsed time: 0:00:03.226218
+Cost: 3600.0 | Permutations: (0, 1, 2, 4, 7, 6, 3, 9, 5, 8) | Elapsed time: 0:00:03.243867
+Cost: 3599.0 | Permutations: (0, 1, 2, 7, 4, 6, 3, 9, 5, 8) | Elapsed time: 0:00:06.006403
+Cost: 3591.0 | Permutations: (0, 1, 3, 4, 6, 7, 2, 9, 5, 8) | Elapsed time: 0:00:08.058190
+Cost: 3582.0 | Permutations: (0, 1, 3, 4, 6, 9, 7, 2, 5, 8) | Elapsed time: 0:00:08.174116
+Cost: 3574.0 | Permutations: (0, 1, 3, 4, 9, 6, 7, 2, 5, 8) | Elapsed time: 0:00:08.487010
+Cost: 3573.0 | Permutations: (0, 1, 3, 9, 4, 6, 2, 7, 5, 8) | Elapsed time: 0:00:10.446613
+Cost: 3569.0 | Permutations: (0, 1, 3, 9, 4, 6, 5, 7, 2, 8) | Elapsed time: 0:00:10.469258
+Cost: 3556.0 | Permutations: (0, 1, 3, 9, 4, 6, 7, 2, 5, 8) | Elapsed time: 0:00:10.487323
+Cost: 3548.0 | Permutations: (0, 1, 4, 3, 6, 9, 7, 2, 5, 8) | Elapsed time: 0:00:12.209675
+Cost: 3540.0 | Permutations: (0, 1, 4, 3, 9, 6, 7, 2, 5, 8) | Elapsed time: 0:00:12.526079
+Cost: 3536.0 | Permutations: (0, 1, 4, 5, 9, 6, 3, 7, 2, 8) | Elapsed time: 0:00:13.470133
+Cost: 3536.0 | Permutations: (0, 1, 4, 5, 9, 6, 3, 7, 2, 8), (0, 1, 4, 6, 7, 2, 3, 9, 5, 8) | Elapsed time: 0:00:14.223273
+Cost: 3528.0 | Permutations: (0, 1, 4, 6, 9, 3, 7, 2, 5, 8) | Elapsed time: 0:00:14.681160
+Cost: 3525.0 | Permutations: (0, 1, 4, 9, 3, 6, 5, 7, 2, 8) | Elapsed time: 0:00:16.408004
+Cost: 3512.0 | Permutations: (0, 1, 4, 9, 3, 6, 7, 2, 5, 8) | Elapsed time: 0:00:16.426595
+Cost: 3510.0 | Permutations: (0, 1, 4, 9, 6, 3, 7, 2, 5, 8) | Elapsed time: 0:00:16.789082
+Cost: 3510.0 | Permutations: (0, 1, 4, 9, 6, 3, 7, 2, 5, 8), (0, 1, 9, 4, 6, 3, 7, 2, 5, 8) | Elapsed time: 0:00:27.940570
+Cost: 3510.0 | Permutations: (0, 1, 4, 9, 6, 3, 7, 2, 5, 8), (0, 1, 9, 4, 6, 3, 7, 2, 5, 8), (0, 4, 1, 9, 3, 6, 7, 2, 5, 8) | Elapsed time: 0:00:51.534535
+Cost: 3508.0 | Permutations: (0, 4, 1, 9, 6, 3, 7, 2, 5, 8) | Elapsed time: 0:00:51.880776
+----------------------------------------------------------------------------------------------------
+Best cost: 3508.0 | Best permutations: (0, 4, 1, 9, 6, 3, 7, 2, 5, 8) | Elapsed time: 0:02:06.126660

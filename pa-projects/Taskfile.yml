@@ -1,0 +1,17 @@
+version: 3
+
+tasks:
+  init:
+    desc: Initialize python project for development & create venv image
+    aliases: [i]
+    platforms: [linux]
+    cmds:
+      - |
+        {{if eq .CLI_ARGS "hard"}}
+        rm -rf ./.venv
+        sudo rm -rf ./**/__pycache__
+        sudo rm -rf ./**/*.pyc
+        {{end}}
+      - python -m venv .venv
+      - .venv/bin/pip install -r requirements.txt
+      - docker build -f Dockerfile-venv -t pa-venv .

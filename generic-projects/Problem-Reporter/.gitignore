@@ -1,0 +1,14 @@
+.idea
+.jpb
+
+### Presentation Layer ###
+PresentationLayer/HELP.md
+PresentationLayer/target/
+PresentationLayer/*.mvn
+
+### Domain Layer ###
+DomainLayer/target/
+DataAccessLayer/*.iml
+
+### DataAccess Layer ###
+DataAccessLayer/target/

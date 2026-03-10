@@ -1,0 +1,16 @@
+{
+  "singleQuote": false,
+  "tabWidth": 2,
+  "endOfLine": "crlf",
+  "printWidth": 88,
+  "proseWrap": "always",
+  "bracketSameLine": true,
+  "overrides": [
+    {
+      "files": ["*.js", "*.mjs", "*.ts", "*.mts"],
+      "options": {
+        "tabWidth": 4
+      }
+    }
+  ]
+}

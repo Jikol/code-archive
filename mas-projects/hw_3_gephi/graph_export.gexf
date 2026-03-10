@@ -1,0 +1,2921 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<gexf xmlns="http://gexf.net/1.3" version="1.3" xmlns:viz="http://gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://gexf.net/1.3 http://gexf.net/1.3/gexf.xsd">
+  <meta lastmodifieddate="2023-01-02">
+    <creator>Gephi 0.9.3</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="degree" title="Degree" type="integer">
+        <default>0</default>
+      </attribute>
+      <attribute id="weighted degree" title="Weighted Degree" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="harmonicclosnesscentrality" title="Harmonic Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="componentnumber" title="Component ID" type="integer">
+        <default>0</default>
+      </attribute>
+      <attribute id="clustering" title="Clustering Coefficient" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="triangles" title="Number of triangles" type="integer">
+        <default>0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+      <attribute id="polygon" title="polygon" type="integer"/>
+    </attributes>
+    <nodes>
+      <node id="Aemon" label="Aemon">
+        <attvalues>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="weighted degree" value="74.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.3897058823529412"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.4237421383647799"/>
+          <attvalue for="betweenesscentrality" value="25.72425800721507"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.7"/>
+          <attvalue for="triangles" value="7"/>
+          <attvalue for="modularity_class" value="1"/>
+        </attvalues>
+        <viz:size value="8.2613125"/>
+        <viz:position x="5488.222" y="-5512.9263"/>
+        <viz:color r="255" g="211" b="214"/>
+      </node>
+      <node id="Grenn" label="Grenn">
+        <attvalues>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="81.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.3302180685358255"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3693396226415095"/>
+          <attvalue for="betweenesscentrality" value="0.3333333333333333"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.8333333333333334"/>
+          <attvalue for="triangles" value="5"/>
+          <attvalue for="modularity_class" value="1"/>
+        </attvalues>
+        <viz:size value="8.0033865"/>
+        <viz:position x="5457.0244" y="-5391.0044"/>
+        <viz:color r="255" g="211" b="214"/>
+      </node>
+      <node id="Samwell" label="Samwell">
+        <attvalues>
+          <attvalue for="degree" value="15"/>
+          <attvalue for="weighted degree" value="282.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.38405797101449274"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.457861635220126"/>
+          <attvalue for="betweenesscentrality" value="179.5971781317952"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.23809523809523808"/>
+          <attvalue for="triangles" value="25"/>
+          <attvalue for="modularity_class" value="1"/>
+        </attvalues>
+        <viz:size value="9.824386"/>
+        <viz:position x="5621.819" y="-5474.18"/>
+        <viz:color r="255" g="211" b="214"/>
+      </node>
+      <node id="Aerys" label="Aerys">
+        <attvalues>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="37.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.3925925925925926"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.427672955974843"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="1.0"/>
+          <attvalue for="triangles" value="6"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5272.515" y="-5733.6753"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Jaime" label="Jaime">
+        <attvalues>
+          <attvalue for="degree" value="24"/>
+          <attvalue for="weighted degree" value="372.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.4796380090497738"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.5621069182389942"/>
+          <attvalue for="betweenesscentrality" value="556.1852522889823"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.27898550724637683"/>
+          <attvalue for="triangles" value="77"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="13.649845"/>
+        <viz:position x="5364.8447" y="-5726.067"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Robert" label="Robert">
+        <attvalues>
+          <attvalue for="degree" value="18"/>
+          <attvalue for="weighted degree" value="128.0"/>
+          <attvalue for="eccentricity" value="3.0"/>
+          <attvalue for="closnesscentrality" value="0.5"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.5566037735849058"/>
+          <attvalue for="betweenesscentrality" value="1165.6025171231618"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.2875816993464052"/>
+          <attvalue for="triangles" value="44"/>
+          <attvalue for="modularity_class" value="2"/>
+        </attvalues>
+        <viz:size value="19.840433"/>
+        <viz:position x="5304.6567" y="-5662.2354"/>
+        <viz:color r="190" g="254" b="255"/>
+      </node>
+      <node id="Tyrion" label="Tyrion">
+        <attvalues>
+          <attvalue for="degree" value="36"/>
+          <attvalue for="weighted degree" value="551.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.5120772946859904"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.6226415094339627"/>
+          <attvalue for="betweenesscentrality" value="1101.3849724234346"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.18095238095238095"/>
+          <attvalue for="triangles" value="114"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="19.188099"/>
+        <viz:position x="5366.7256" y="-5825.255"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Tywin" label="Tywin">
+        <attvalues>
+          <attvalue for="degree" value="22"/>
+          <attvalue for="weighted degree" value="204.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.4690265486725664"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.5487421383647804"/>
+          <attvalue for="betweenesscentrality" value="364.7212195528084"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.22943722943722944"/>
+          <attvalue for="triangles" value="53"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="11.704914"/>
+        <viz:position x="5439.006" y="-5832.484"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Alliser" label="Alliser">
+        <attvalues>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="weighted degree" value="29.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.343042071197411"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3745283018867925"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="1.0"/>
+          <attvalue for="triangles" value="3"/>
+          <attvalue for="modularity_class" value="1"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5573.073" y="-5529.4165"/>
+        <viz:color r="255" g="211" b="214"/>
+      </node>
+      <node id="Mance" label="Mance">
+        <attvalues>
+          <attvalue for="degree" value="12"/>
+          <attvalue for="weighted degree" value="160.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.3581081081081081"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.42248427672955985"/>
+          <attvalue for="betweenesscentrality" value="40.490725033825065"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.3181818181818182"/>
+          <attvalue for="triangles" value="21"/>
+          <attvalue for="modularity_class" value="1"/>
+        </attvalues>
+        <viz:size value="8.411313"/>
+        <viz:position x="5582.0244" y="-5406.833"/>
+        <viz:color r="255" g="211" b="214"/>
+      </node>
+      <node id="Amory" label="Amory">
+        <attvalues>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="5.0"/>
+          <attvalue for="eccentricity" value="6.0"/>
+          <attvalue for="closnesscentrality" value="0.2617283950617284"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.28411949685534565"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.0"/>
+          <attvalue for="triangles" value="0"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5442.079" y="-5956.0527"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Oberyn" label="Oberyn">
+        <attvalues>
+          <attvalue for="degree" value="7"/>
+          <attvalue for="weighted degree" value="76.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.35333333333333333"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.4078616352201259"/>
+          <attvalue for="betweenesscentrality" value="108.96349206349204"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.42857142857142855"/>
+          <attvalue for="triangles" value="9"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="9.1068735"/>
+        <viz:position x="5399.395" y="-5943.062"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Arya" label="Arya">
+        <attvalues>
+          <attvalue for="degree" value="19"/>
+          <attvalue for="weighted degree" value="269.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.48623853211009177"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.5534591194968556"/>
+          <attvalue for="betweenesscentrality" value="443.0135843004334"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.3333333333333333"/>
+          <attvalue for="triangles" value="57"/>
+          <attvalue for="modularity_class" value="2"/>
+        </attvalues>
+        <viz:size value="12.500224"/>
+        <viz:position x="5481.553" y="-5666.9214"/>
+        <viz:color r="190" g="254" b="255"/>
+      </node>
+      <node id="Anguy" label="Anguy">
+        <attvalues>
+          <attvalue for="degree" value="2"/>
+          <attvalue for="weighted degree" value="15.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.32919254658385094"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.354245283018868"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="1.0"/>
+          <attvalue for="triangles" value="1"/>
+          <attvalue for="modularity_class" value="2"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5315.961" y="-5607.1553"/>
+        <viz:color r="190" g="254" b="255"/>
+      </node>
+      <node id="Beric" label="Beric">
+        <attvalues>
+          <attvalue for="degree" value="6"/>
+          <attvalue for="weighted degree" value="75.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.33865814696485624"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.37940251572327066"/>
+          <attvalue for="betweenesscentrality" value="3.38976073937821"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.6"/>
+          <attvalue for="triangles" value="9"/>
+          <attvalue for="modularity_class" value="2"/>
+        </attvalues>
+        <viz:size value="8.034434"/>
+        <viz:position x="5364.8213" y="-5566.6885"/>
+        <viz:color r="190" g="254" b="255"/>
+      </node>
+      <node id="Bran" label="Bran">
+        <attvalues>
+          <attvalue for="degree" value="14"/>
+          <attvalue for="weighted degree" value="344.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.42063492063492064"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.4940251572327047"/>
+          <attvalue for="betweenesscentrality" value="350.687375760444"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.31868131868131866"/>
+          <attvalue for="triangles" value="29"/>
+          <attvalue for="modularity_class" value="3"/>
+        </attvalues>
+        <viz:size value="11.562355"/>
+        <viz:position x="5642.084" y="-5635.771"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="Brynden" label="Brynden">
+        <attvalues>
+          <attvalue for="degree" value="8"/>
+          <attvalue for="weighted degree" value="55.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.375886524822695"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.42877358490566087"/>
+          <attvalue for="betweenesscentrality" value="26.306503908565787"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.4642857142857143"/>
+          <attvalue for="triangles" value="13"/>
+          <attvalue for="modularity_class" value="4"/>
+        </attvalues>
+        <viz:size value="8.267227"/>
+        <viz:position x="5662.2974" y="-5789.3765"/>
+        <viz:color r="216" g="255" b="224"/>
+      </node>
+      <node id="Cersei" label="Cersei">
+        <attvalues>
+          <attvalue for="degree" value="20"/>
+          <attvalue for="weighted degree" value="226.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.4435146443514644"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.5243710691823904"/>
+          <attvalue for="betweenesscentrality" value="148.84389896741845"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.35789473684210527"/>
+          <attvalue for="triangles" value="68"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="9.511988"/>
+        <viz:position x="5342.952" y="-5776.065"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Gendry" label="Gendry">
+        <attvalues>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="59.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.3333333333333333"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3668238993710694"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="1.0"/>
+          <attvalue for="triangles" value="6"/>
+          <attvalue for="modularity_class" value="2"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5292.5874" y="-5556.583"/>
+        <viz:color r="190" g="254" b="255"/>
+      </node>
+      <node id="Gregor" label="Gregor">
+        <attvalues>
+          <attvalue for="degree" value="12"/>
+          <attvalue for="weighted degree" value="117.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.40304182509505704"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.4677672955974846"/>
+          <attvalue for="betweenesscentrality" value="32.72172929970772"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.5454545454545454"/>
+          <attvalue for="triangles" value="36"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.332394"/>
+        <viz:position x="5290.0264" y="-5784.5923"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Joffrey" label="Joffrey">
+        <attvalues>
+          <attvalue for="degree" value="18"/>
+          <attvalue for="weighted degree" value="255.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.43983402489626555"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.5188679245283022"/>
+          <attvalue for="betweenesscentrality" value="141.54076340540198"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.39215686274509803"/>
+          <attvalue for="triangles" value="60"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="9.4378"/>
+        <viz:position x="5452.489" y="-5776.886"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Jon" label="Jon">
+        <attvalues>
+          <attvalue for="degree" value="26"/>
+          <attvalue for="weighted degree" value="442.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.4796380090497738"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.5691823899371073"/>
+          <attvalue for="betweenesscentrality" value="1279.7533534055324"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.15692307692307692"/>
+          <attvalue for="triangles" value="51"/>
+          <attvalue for="modularity_class" value="1"/>
+        </attvalues>
+        <viz:size value="21.0"/>
+        <viz:position x="5465.7944" y="-5467.428"/>
+        <viz:color r="255" g="211" b="214"/>
+      </node>
+      <node id="Rickon" label="Rickon">
+        <attvalues>
+          <attvalue for="degree" value="6"/>
+          <attvalue for="weighted degree" value="81.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.37857142857142856"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.42562893081761033"/>
+          <attvalue for="betweenesscentrality" value="4.2440476190476195"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.8"/>
+          <attvalue for="triangles" value="12"/>
+          <attvalue for="modularity_class" value="3"/>
+        </attvalues>
+        <viz:size value="8.043112"/>
+        <viz:position x="5554.8438" y="-5661.0205"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="Roose" label="Roose">
+        <attvalues>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="17.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.3581081081081081"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3957547169811325"/>
+          <attvalue for="betweenesscentrality" value="1.4633718504893212"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.6666666666666666"/>
+          <attvalue for="triangles" value="4"/>
+          <attvalue for="modularity_class" value="4"/>
+        </attvalues>
+        <viz:size value="8.014865"/>
+        <viz:position x="5517.9355" y="-5701.5596"/>
+        <viz:color r="216" g="255" b="224"/>
+      </node>
+      <node id="Sandor" label="Sandor">
+        <attvalues>
+          <attvalue for="degree" value="13"/>
+          <attvalue for="weighted degree" value="137.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.41732283464566927"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.4787735849056608"/>
+          <attvalue for="betweenesscentrality" value="78.8130825635155"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.5"/>
+          <attvalue for="triangles" value="39"/>
+          <attvalue for="modularity_class" value="2"/>
+        </attvalues>
+        <viz:size value="8.8006"/>
+        <viz:position x="5375.8164" y="-5636.0205"/>
+        <viz:color r="190" g="254" b="255"/>
+      </node>
+      <node id="Thoros" label="Thoros">
+        <attvalues>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="weighted degree" value="60.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.36177474402730375"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3962264150943398"/>
+          <attvalue for="betweenesscentrality" value="10.719204651557584"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.8"/>
+          <attvalue for="triangles" value="8"/>
+          <attvalue for="modularity_class" value="2"/>
+        </attvalues>
+        <viz:size value="8.108888"/>
+        <viz:position x="5251.3423" y="-5622.212"/>
+        <viz:color r="190" g="254" b="255"/>
+      </node>
+      <node id="Balon" label="Balon">
+        <attvalues>
+          <attvalue for="degree" value="6"/>
+          <attvalue for="weighted degree" value="29.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.4061302681992337"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.4496855345911952"/>
+          <attvalue for="betweenesscentrality" value="3.495468214276264"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.8"/>
+          <attvalue for="triangles" value="12"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.035508"/>
+        <viz:position x="5456.349" y="-5719.9688"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Loras" label="Loras">
+        <attvalues>
+          <attvalue for="degree" value="9"/>
+          <attvalue for="weighted degree" value="76.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.3897058823529412"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.4441823899371071"/>
+          <attvalue for="betweenesscentrality" value="21.039886502386498"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.5"/>
+          <attvalue for="triangles" value="18"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.213728"/>
+        <viz:position x="5491.601" y="-5839.6055"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Belwas" label="Belwas">
+        <attvalues>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="67.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.2857142857142857"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.32311320754716977"/>
+          <attvalue for="betweenesscentrality" value="105.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.5"/>
+          <attvalue for="triangles" value="3"/>
+          <attvalue for="modularity_class" value="5"/>
+        </attvalues>
+        <viz:size value="9.066612"/>
+        <viz:position x="4943.3623" y="-5744.841"/>
+        <viz:color r="253" g="255" b="208"/>
+      </node>
+      <node id="Barristan" label="Barristan">
+        <attvalues>
+          <attvalue for="degree" value="6"/>
+          <attvalue for="weighted degree" value="63.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.37992831541218636"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.42138364779874254"/>
+          <attvalue for="betweenesscentrality" value="223.23482676662778"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.5333333333333333"/>
+          <attvalue for="triangles" value="8"/>
+          <attvalue for="modularity_class" value="5"/>
+        </attvalues>
+        <viz:size value="10.267666"/>
+        <viz:position x="5095.3345" y="-5730.04"/>
+        <viz:color r="253" g="255" b="208"/>
+      </node>
+      <node id="Illyrio" label="Illyrio">
+        <attvalues>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="10.0"/>
+          <attvalue for="eccentricity" value="6.0"/>
+          <attvalue for="closnesscentrality" value="0.22268907563025211"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.24072327044025132"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.0"/>
+          <attvalue for="triangles" value="0"/>
+          <attvalue for="modularity_class" value="5"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="4886.824" y="-5741.8525"/>
+        <viz:color r="253" g="255" b="208"/>
+      </node>
+      <node id="Hodor" label="Hodor">
+        <attvalues>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="177.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.33865814696485624"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3794025157232706"/>
+          <attvalue for="betweenesscentrality" value="12.208092673078013"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.6666666666666666"/>
+          <attvalue for="triangles" value="4"/>
+          <attvalue for="modularity_class" value="3"/>
+        </attvalues>
+        <viz:size value="8.124012"/>
+        <viz:position x="5713.6494" y="-5601.3994"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="Jojen" label="Jojen">
+        <attvalues>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="125.0"/>
+          <attvalue for="eccentricity" value="6.0"/>
+          <attvalue for="closnesscentrality" value="0.3136094674556213"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.35723270440251575"/>
+          <attvalue for="betweenesscentrality" value="2.261904761904762"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.8333333333333334"/>
+          <attvalue for="triangles" value="5"/>
+          <attvalue for="modularity_class" value="3"/>
+        </attvalues>
+        <viz:size value="8.022977"/>
+        <viz:position x="5703.5527" y="-5534.7593"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="Luwin" label="Luwin">
+        <attvalues>
+          <attvalue for="degree" value="2"/>
+          <attvalue for="weighted degree" value="8.0"/>
+          <attvalue for="eccentricity" value="6.0"/>
+          <attvalue for="closnesscentrality" value="0.29775280898876405"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.32751572327044"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="1.0"/>
+          <attvalue for="triangles" value="1"/>
+          <attvalue for="modularity_class" value="3"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5702.437" y="-5661.5093"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="Meera" label="Meera">
+        <attvalues>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="weighted degree" value="139.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.33865814696485624"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3834905660377359"/>
+          <attvalue for="betweenesscentrality" value="11.086910033837677"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.7"/>
+          <attvalue for="triangles" value="7"/>
+          <attvalue for="modularity_class" value="3"/>
+        </attvalues>
+        <viz:size value="8.112623"/>
+        <viz:position x="5656.5767" y="-5532.923"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="Nan" label="Nan">
+        <attvalues>
+          <attvalue for="degree" value="2"/>
+          <attvalue for="weighted degree" value="18.0"/>
+          <attvalue for="eccentricity" value="6.0"/>
+          <attvalue for="closnesscentrality" value="0.29775280898876405"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.32751572327044"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="1.0"/>
+          <attvalue for="triangles" value="1"/>
+          <attvalue for="modularity_class" value="3"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5702.437" y="-5661.5093"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="Theon" label="Theon">
+        <attvalues>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="38.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.3732394366197183"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.41305031446540896"/>
+          <attvalue for="betweenesscentrality" value="2.625432900432901"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.8333333333333334"/>
+          <attvalue for="triangles" value="5"/>
+          <attvalue for="modularity_class" value="3"/>
+        </attvalues>
+        <viz:size value="8.0266695"/>
+        <viz:position x="5592.086" y="-5615.765"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="Brienne" label="Brienne">
+        <attvalues>
+          <attvalue for="degree" value="7"/>
+          <attvalue for="weighted degree" value="122.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.3882783882783883"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.43789308176100666"/>
+          <attvalue for="betweenesscentrality" value="8.556744846141125"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.6190476190476191"/>
+          <attvalue for="triangles" value="13"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.086921"/>
+        <viz:position x="5509.53" y="-5739.5327"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Bronn" label="Bronn">
+        <attvalues>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="59.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.34527687296416937"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.38820754716981143"/>
+          <attvalue for="betweenesscentrality" value="0.5833333333333333"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.6666666666666666"/>
+          <attvalue for="triangles" value="4"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.005925"/>
+        <viz:position x="5273.942" y="-5877.7397"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Podrick" label="Podrick">
+        <attvalues>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="weighted degree" value="64.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.37722419928825623"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.42012578616352225"/>
+          <attvalue for="betweenesscentrality" value="4.651775283539987"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.5"/>
+          <attvalue for="triangles" value="5"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.047254"/>
+        <viz:position x="5442.1904" y="-5920.2686"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Lothar" label="Lothar">
+        <attvalues>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="weighted degree" value="34.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.33544303797468356"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3786163522012581"/>
+          <attvalue for="betweenesscentrality" value="3.673192662644994"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.8"/>
+          <attvalue for="triangles" value="8"/>
+          <attvalue for="modularity_class" value="4"/>
+        </attvalues>
+        <viz:size value="8.037313"/>
+        <viz:position x="5730.278" y="-5796.3765"/>
+        <viz:color r="216" g="255" b="224"/>
+      </node>
+      <node id="Walder" label="Walder">
+        <attvalues>
+          <attvalue for="degree" value="8"/>
+          <attvalue for="weighted degree" value="87.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.3693379790940767"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.4209119496855351"/>
+          <attvalue for="betweenesscentrality" value="18.215254476197682"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.6071428571428571"/>
+          <attvalue for="triangles" value="17"/>
+          <attvalue for="modularity_class" value="4"/>
+        </attvalues>
+        <viz:size value="8.185035"/>
+        <viz:position x="5689.802" y="-5819.153"/>
+        <viz:color r="216" g="255" b="224"/>
+      </node>
+      <node id="Catelyn" label="Catelyn">
+        <attvalues>
+          <attvalue for="degree" value="18"/>
+          <attvalue for="weighted degree" value="184.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.44166666666666665"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.5204402515723274"/>
+          <attvalue for="betweenesscentrality" value="272.16123698980863"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.29411764705882354"/>
+          <attvalue for="triangles" value="45"/>
+          <attvalue for="modularity_class" value="4"/>
+        </attvalues>
+        <viz:size value="10.76467"/>
+        <viz:position x="5579.031" y="-5780.7285"/>
+        <viz:color r="216" g="255" b="224"/>
+      </node>
+      <node id="Edmure" label="Edmure">
+        <attvalues>
+          <attvalue for="degree" value="8"/>
+          <attvalue for="weighted degree" value="98.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.3706293706293706"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.42138364779874254"/>
+          <attvalue for="betweenesscentrality" value="35.1554031700034"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.5357142857142857"/>
+          <attvalue for="triangles" value="15"/>
+          <attvalue for="modularity_class" value="4"/>
+        </attvalues>
+        <viz:size value="8.357116"/>
+        <viz:position x="5638.5396" y="-5837.399"/>
+        <viz:color r="216" g="255" b="224"/>
+      </node>
+      <node id="Hoster" label="Hoster">
+        <attvalues>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="weighted degree" value="24.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.314540059347181"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.35141509433962265"/>
+          <attvalue for="betweenesscentrality" value="1.3502564102564105"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.6666666666666666"/>
+          <attvalue for="triangles" value="2"/>
+          <attvalue for="modularity_class" value="4"/>
+        </attvalues>
+        <viz:size value="8.013716"/>
+        <viz:position x="5603.182" y="-5889.737"/>
+        <viz:color r="216" g="255" b="224"/>
+      </node>
+      <node id="Jeyne" label="Jeyne">
+        <attvalues>
+          <attvalue for="degree" value="2"/>
+          <attvalue for="weighted degree" value="28.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.33544303797468356"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3683962264150945"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="1.0"/>
+          <attvalue for="triangles" value="1"/>
+          <attvalue for="modularity_class" value="4"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5631.6597" y="-5761.8457"/>
+        <viz:color r="216" g="255" b="224"/>
+      </node>
+      <node id="Lysa" label="Lysa">
+        <attvalues>
+          <attvalue for="degree" value="10"/>
+          <attvalue for="weighted degree" value="108.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.3925925925925926"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.45314465408805066"/>
+          <attvalue for="betweenesscentrality" value="84.6723448383103"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.35555555555555557"/>
+          <attvalue for="triangles" value="16"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.860119"/>
+        <viz:position x="5514.1006" y="-5879.9106"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Petyr" label="Petyr">
+        <attvalues>
+          <attvalue for="degree" value="7"/>
+          <attvalue for="weighted degree" value="89.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.39552238805970147"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.44685534591195003"/>
+          <attvalue for="betweenesscentrality" value="6.400940823882"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.7142857142857143"/>
+          <attvalue for="triangles" value="15"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.065022"/>
+        <viz:position x="5565.2856" y="-5834.2153"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Robb" label="Robb">
+        <attvalues>
+          <attvalue for="degree" value="25"/>
+          <attvalue for="weighted degree" value="342.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.48847926267281105"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.5778301886792455"/>
+          <attvalue for="betweenesscentrality" value="706.557283246479"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.24"/>
+          <attvalue for="triangles" value="72"/>
+          <attvalue for="modularity_class" value="4"/>
+        </attvalues>
+        <viz:size value="15.177356"/>
+        <viz:position x="5651.7305" y="-5698.3584"/>
+        <viz:color r="216" g="255" b="224"/>
+      </node>
+      <node id="Roslin" label="Roslin">
+        <attvalues>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="32.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.31268436578171094"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3514150943396227"/>
+          <attvalue for="betweenesscentrality" value="0.3757466063348417"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.8333333333333334"/>
+          <attvalue for="triangles" value="5"/>
+          <attvalue for="modularity_class" value="4"/>
+        </attvalues>
+        <viz:size value="8.003817"/>
+        <viz:position x="5691.763" y="-5853.414"/>
+        <viz:color r="216" g="255" b="224"/>
+      </node>
+      <node id="Sansa" label="Sansa">
+        <attvalues>
+          <attvalue for="degree" value="26"/>
+          <attvalue for="weighted degree" value="383.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.5096153846153846"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.5911949685534593"/>
+          <attvalue for="betweenesscentrality" value="705.198562351914"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.2523076923076923"/>
+          <attvalue for="triangles" value="82"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="15.163553"/>
+        <viz:position x="5517.1465" y="-5798.506"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Stannis" label="Stannis">
+        <attvalues>
+          <attvalue for="degree" value="14"/>
+          <attvalue for="weighted degree" value="146.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.4796380090497738"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.5306603773584908"/>
+          <attvalue for="betweenesscentrality" value="571.5247305125715"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.3516483516483517"/>
+          <attvalue for="triangles" value="32"/>
+          <attvalue for="modularity_class" value="6"/>
+        </attvalues>
+        <viz:size value="13.805667"/>
+        <viz:position x="5440.4346" y="-5581.7793"/>
+        <viz:color r="145" g="255" b="156"/>
+      </node>
+      <node id="Elia" label="Elia">
+        <attvalues>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="weighted degree" value="29.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.3693379790940767"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.41383647798742146"/>
+          <attvalue for="betweenesscentrality" value="16.677489230157825"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.6"/>
+          <attvalue for="triangles" value="6"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.169414"/>
+        <viz:position x="5226.3506" y="-5800.246"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Ilyn" label="Ilyn">
+        <attvalues>
+          <attvalue for="degree" value="6"/>
+          <attvalue for="weighted degree" value="32.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.3521594684385382"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.403930817610063"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="1.0"/>
+          <attvalue for="triangles" value="15"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5247.235" y="-5759.77"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Meryn" label="Meryn">
+        <attvalues>
+          <attvalue for="degree" value="7"/>
+          <attvalue for="weighted degree" value="47.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.36177474402730375"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.41698113207547177"/>
+          <attvalue for="betweenesscentrality" value="1.441374269005848"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.9047619047619048"/>
+          <attvalue for="triangles" value="19"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.014642"/>
+        <viz:position x="5272.1997" y="-5822.2397"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Pycelle" label="Pycelle">
+        <attvalues>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="24.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.3509933774834437"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.39528301886792466"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="1.0"/>
+          <attvalue for="triangles" value="6"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5376.3545" y="-5903.735"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Shae" label="Shae">
+        <attvalues>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="weighted degree" value="45.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.3719298245614035"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.4138364779874217"/>
+          <attvalue for="betweenesscentrality" value="6.969577579600462"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.6"/>
+          <attvalue for="triangles" value="6"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.070799"/>
+        <viz:position x="5328.1787" y="-5888.7524"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Varys" label="Varys">
+        <attvalues>
+          <attvalue for="degree" value="7"/>
+          <attvalue for="weighted degree" value="49.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.35570469798657717"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.4110062893081762"/>
+          <attvalue for="betweenesscentrality" value="5.060887723387722"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.5238095238095238"/>
+          <attvalue for="triangles" value="11"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.05141"/>
+        <viz:position x="5430.6743" y="-5884.025"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Craster" label="Craster">
+        <attvalues>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="weighted degree" value="75.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.3322884012539185"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3756289308176101"/>
+          <attvalue for="betweenesscentrality" value="105.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.6"/>
+          <attvalue for="triangles" value="6"/>
+          <attvalue for="modularity_class" value="1"/>
+        </attvalues>
+        <viz:size value="9.066612"/>
+        <viz:position x="5629.274" y="-5354.801"/>
+        <viz:color r="255" g="211" b="214"/>
+      </node>
+      <node id="Karl" label="Karl">
+        <attvalues>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="6.0"/>
+          <attvalue for="eccentricity" value="6.0"/>
+          <attvalue for="closnesscentrality" value="0.25"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.2691823899371066"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.0"/>
+          <attvalue for="triangles" value="0"/>
+          <attvalue for="modularity_class" value="1"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5681.732" y="-5344.153"/>
+        <viz:color r="255" g="211" b="214"/>
+      </node>
+      <node id="Daario" label="Daario">
+        <attvalues>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="30.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.27040816326530615"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3072327044025156"/>
+          <attvalue for="betweenesscentrality" value="0.3333333333333333"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.8333333333333334"/>
+          <attvalue for="triangles" value="5"/>
+          <attvalue for="modularity_class" value="5"/>
+        </attvalues>
+        <viz:size value="8.0033865"/>
+        <viz:position x="4870.31" y="-5676.423"/>
+        <viz:color r="253" g="255" b="208"/>
+      </node>
+      <node id="Drogo" label="Drogo">
+        <attvalues>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="35.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.27040816326530615"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3072327044025156"/>
+          <attvalue for="betweenesscentrality" value="0.3333333333333333"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.8333333333333334"/>
+          <attvalue for="triangles" value="5"/>
+          <attvalue for="modularity_class" value="5"/>
+        </attvalues>
+        <viz:size value="8.0033865"/>
+        <viz:position x="4861.015" y="-5725.494"/>
+        <viz:color r="253" g="255" b="208"/>
+      </node>
+      <node id="Irri" label="Irri">
+        <attvalues>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="33.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.27040816326530615"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3072327044025156"/>
+          <attvalue for="betweenesscentrality" value="1.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.6666666666666666"/>
+          <attvalue for="triangles" value="4"/>
+          <attvalue for="modularity_class" value="5"/>
+        </attvalues>
+        <viz:size value="8.010159"/>
+        <viz:position x="4838.7344" y="-5654.838"/>
+        <viz:color r="253" g="255" b="208"/>
+      </node>
+      <node id="Daenerys" label="Daenerys">
+        <attvalues>
+          <attvalue for="degree" value="14"/>
+          <attvalue for="weighted degree" value="232.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.36551724137931035"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.4347484276729564"/>
+          <attvalue for="betweenesscentrality" value="874.8372110508582"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.15384615384615385"/>
+          <attvalue for="triangles" value="14"/>
+          <attvalue for="modularity_class" value="5"/>
+        </attvalues>
+        <viz:size value="16.88678"/>
+        <viz:position x="4962.6387" y="-5671.283"/>
+        <viz:color r="253" g="255" b="208"/>
+      </node>
+      <node id="Aegon" label="Aegon">
+        <attvalues>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="8.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.2683544303797468"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.2930817610062892"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.0"/>
+          <attvalue for="triangles" value="0"/>
+          <attvalue for="modularity_class" value="5"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="4884.009" y="-5631.966"/>
+        <viz:color r="253" g="255" b="208"/>
+      </node>
+      <node id="Jorah" label="Jorah">
+        <attvalues>
+          <attvalue for="degree" value="6"/>
+          <attvalue for="weighted degree" value="89.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.28804347826086957"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.334119496855346"/>
+          <attvalue for="betweenesscentrality" value="12.96584412319707"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.5333333333333333"/>
+          <attvalue for="triangles" value="8"/>
+          <attvalue for="modularity_class" value="5"/>
+        </attvalues>
+        <viz:size value="8.13171"/>
+        <viz:position x="4976.9683" y="-5717.4307"/>
+        <viz:color r="253" g="255" b="208"/>
+      </node>
+      <node id="Kraznys" label="Kraznys">
+        <attvalues>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="10.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.2683544303797468"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.2930817610062892"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.0"/>
+          <attvalue for="triangles" value="0"/>
+          <attvalue for="modularity_class" value="5"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="4916.897" y="-5712.7817"/>
+        <viz:color r="253" g="255" b="208"/>
+      </node>
+      <node id="Missandei" label="Missandei">
+        <attvalues>
+          <attvalue for="degree" value="2"/>
+          <attvalue for="weighted degree" value="30.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.26903553299492383"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.29779874213836466"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="1.0"/>
+          <attvalue for="triangles" value="1"/>
+          <attvalue for="modularity_class" value="5"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="4828.129" y="-5704.555"/>
+        <viz:color r="253" g="255" b="208"/>
+      </node>
+      <node id="Rakharo" label="Rakharo">
+        <attvalues>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="7.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.2683544303797468"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.2930817610062892"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.0"/>
+          <attvalue for="triangles" value="0"/>
+          <attvalue for="modularity_class" value="5"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="4994.714" y="-5623.33"/>
+        <viz:color r="253" g="255" b="208"/>
+      </node>
+      <node id="Rhaegar" label="Rhaegar">
+        <attvalues>
+          <attvalue for="degree" value="6"/>
+          <attvalue for="weighted degree" value="42.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.35570469798657717"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.39701257861635264"/>
+          <attvalue for="betweenesscentrality" value="40.695018608632324"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.4"/>
+          <attvalue for="triangles" value="6"/>
+          <attvalue for="modularity_class" value="5"/>
+        </attvalues>
+        <viz:size value="8.413388"/>
+        <viz:position x="5120.3228" y="-5705.6333"/>
+        <viz:color r="253" g="255" b="208"/>
+      </node>
+      <node id="Viserys" label="Viserys">
+        <attvalues>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="weighted degree" value="19.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.3719298245614035"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.40990566037735876"/>
+          <attvalue for="betweenesscentrality" value="87.06103762639302"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.3333333333333333"/>
+          <attvalue for="triangles" value="1"/>
+          <attvalue for="modularity_class" value="5"/>
+        </attvalues>
+        <viz:size value="8.884384"/>
+        <viz:position x="5106.6" y="-5757.299"/>
+        <viz:color r="253" g="255" b="208"/>
+      </node>
+      <node id="Worm" label="Worm">
+        <attvalues>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="14.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.2683544303797468"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.2930817610062892"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.0"/>
+          <attvalue for="triangles" value="0"/>
+          <attvalue for="modularity_class" value="5"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="4927.318" y="-5615.0386"/>
+        <viz:color r="253" g="255" b="208"/>
+      </node>
+      <node id="Davos" label="Davos">
+        <attvalues>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="weighted degree" value="87.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.3322884012539185"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3658805031446542"/>
+          <attvalue for="betweenesscentrality" value="312.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.1"/>
+          <attvalue for="triangles" value="1"/>
+          <attvalue for="modularity_class" value="6"/>
+        </attvalues>
+        <viz:size value="11.169361"/>
+        <viz:position x="5378.622" y="-5532.0225"/>
+        <viz:color r="145" g="255" b="156"/>
+      </node>
+      <node id="Cressen" label="Cressen">
+        <attvalues>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="4.0"/>
+          <attvalue for="eccentricity" value="6.0"/>
+          <attvalue for="closnesscentrality" value="0.25"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.26525157232704394"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.0"/>
+          <attvalue for="triangles" value="0"/>
+          <attvalue for="modularity_class" value="6"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5311.5684" y="-5509.7944"/>
+        <viz:color r="145" g="255" b="156"/>
+      </node>
+      <node id="Salladhor" label="Salladhor">
+        <attvalues>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="16.0"/>
+          <attvalue for="eccentricity" value="6.0"/>
+          <attvalue for="closnesscentrality" value="0.25"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.26525157232704394"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.0"/>
+          <attvalue for="triangles" value="0"/>
+          <attvalue for="modularity_class" value="6"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5383.002" y="-5477.5396"/>
+        <viz:color r="145" g="255" b="156"/>
+      </node>
+      <node id="Eddard" label="Eddard">
+        <attvalues>
+          <attvalue for="degree" value="12"/>
+          <attvalue for="weighted degree" value="108.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.4608695652173913"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.5133647798742142"/>
+          <attvalue for="betweenesscentrality" value="107.63498263175192"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.5454545454545454"/>
+          <attvalue for="triangles" value="36"/>
+          <attvalue for="modularity_class" value="2"/>
+        </attvalues>
+        <viz:size value="9.093378"/>
+        <viz:position x="5505.1733" y="-5615.0825"/>
+        <viz:color r="190" g="254" b="255"/>
+      </node>
+      <node id="Eddison" label="Eddison">
+        <attvalues>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="weighted degree" value="24.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.32919254658385094"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.364622641509434"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="1.0"/>
+          <attvalue for="triangles" value="3"/>
+          <attvalue for="modularity_class" value="1"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5488.083" y="-5354.129"/>
+        <viz:color r="255" g="211" b="214"/>
+      </node>
+      <node id="Gilly" label="Gilly">
+        <attvalues>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="69.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.33125"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.37091194968553465"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="1.0"/>
+          <attvalue for="triangles" value="6"/>
+          <attvalue for="modularity_class" value="1"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5673.386" y="-5384.5996"/>
+        <viz:color r="255" g="211" b="214"/>
+      </node>
+      <node id="Qyburn" label="Qyburn">
+        <attvalues>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="11.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.32515337423312884"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3501572327044026"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.0"/>
+          <attvalue for="triangles" value="0"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5269.0806" y="-5851.5366"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Renly" label="Renly">
+        <attvalues>
+          <attvalue for="degree" value="8"/>
+          <attvalue for="weighted degree" value="55.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.41568627450980394"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.45911949685534614"/>
+          <attvalue for="betweenesscentrality" value="23.528412965872906"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.5714285714285714"/>
+          <attvalue for="triangles" value="16"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.239006"/>
+        <viz:position x="5406.546" y="-5756.878"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Tommen" label="Tommen">
+        <attvalues>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="weighted degree" value="31.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.34983498349834985"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.39575471698113224"/>
+          <attvalue for="betweenesscentrality" value="3.8868298368298366"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.5"/>
+          <attvalue for="triangles" value="5"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.039483"/>
+        <viz:position x="5392.701" y="-5864.1304"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Janos" label="Janos">
+        <attvalues>
+          <attvalue for="degree" value="6"/>
+          <attvalue for="weighted degree" value="37.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.39552238805970147"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.4429245283018869"/>
+          <attvalue for="betweenesscentrality" value="131.10367317854931"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.4"/>
+          <attvalue for="triangles" value="6"/>
+          <attvalue for="modularity_class" value="1"/>
+        </attvalues>
+        <viz:size value="9.331779"/>
+        <viz:position x="5606.1987" y="-5569.487"/>
+        <viz:color r="255" g="211" b="214"/>
+      </node>
+      <node id="Bowen" label="Bowen">
+        <attvalues>
+          <attvalue for="degree" value="2"/>
+          <attvalue for="weighted degree" value="11.0"/>
+          <attvalue for="eccentricity" value="6.0"/>
+          <attvalue for="closnesscentrality" value="0.30113636363636365"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.33176100628930794"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="1.0"/>
+          <attvalue for="triangles" value="1"/>
+          <attvalue for="modularity_class" value="1"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5684.755" y="-5488.1377"/>
+        <viz:color r="255" g="211" b="214"/>
+      </node>
+      <node id="Kevan" label="Kevan">
+        <attvalues>
+          <attvalue for="degree" value="6"/>
+          <attvalue for="weighted degree" value="50.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.37992831541218636"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.4264150943396229"/>
+          <attvalue for="betweenesscentrality" value="106.95882721885013"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.4666666666666667"/>
+          <attvalue for="triangles" value="7"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="9.08651"/>
+        <viz:position x="5494.2637" y="-5914.661"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Margaery" label="Margaery">
+        <attvalues>
+          <attvalue for="degree" value="7"/>
+          <attvalue for="weighted degree" value="96.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.375886524822695"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.4248427672955978"/>
+          <attvalue for="betweenesscentrality" value="6.1067651904339195"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.5714285714285714"/>
+          <attvalue for="triangles" value="12"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.062034"/>
+        <viz:position x="5457.494" y="-5860.9775"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Myrcella" label="Myrcella">
+        <attvalues>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="18.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.3719298245614035"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.4106918238993713"/>
+          <attvalue for="betweenesscentrality" value="3.470318303987035"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.6666666666666666"/>
+          <attvalue for="triangles" value="4"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.035253"/>
+        <viz:position x="5496.7812" y="-5948.6943"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Dalla" label="Dalla">
+        <attvalues>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="weighted degree" value="21.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.334384858044164"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3674528301886792"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="1.0"/>
+          <attvalue for="triangles" value="3"/>
+          <attvalue for="modularity_class" value="1"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5540.66" y="-5589.4595"/>
+        <viz:color r="255" g="211" b="214"/>
+      </node>
+      <node id="Melisandre" label="Melisandre">
+        <attvalues>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="62.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.36678200692041524"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.40283018867924547"/>
+          <attvalue for="betweenesscentrality" value="47.90724047194634"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.6666666666666666"/>
+          <attvalue for="triangles" value="4"/>
+          <attvalue for="modularity_class" value="6"/>
+        </attvalues>
+        <viz:size value="8.486651"/>
+        <viz:position x="5428.28" y="-5504.681"/>
+        <viz:color r="145" g="255" b="156"/>
+      </node>
+      <node id="Orell" label="Orell">
+        <attvalues>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="6.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.32515337423312884"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3520440251572327"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.0"/>
+          <attvalue for="triangles" value="0"/>
+          <attvalue for="modularity_class" value="1"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5682.8213" y="-5455.916"/>
+        <viz:color r="255" g="211" b="214"/>
+      </node>
+      <node id="Qhorin" label="Qhorin">
+        <attvalues>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="weighted degree" value="59.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.33125"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.37405660377358496"/>
+          <attvalue for="betweenesscentrality" value="1.4666666666666668"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.8"/>
+          <attvalue for="triangles" value="8"/>
+          <attvalue for="modularity_class" value="1"/>
+        </attvalues>
+        <viz:size value="8.014898"/>
+        <viz:position x="5595.099" y="-5334.087"/>
+        <viz:color r="255" g="211" b="214"/>
+      </node>
+      <node id="Rattleshirt" label="Rattleshirt">
+        <attvalues>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="44.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.3281733746130031"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3661949685534592"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="1.0"/>
+          <attvalue for="triangles" value="6"/>
+          <attvalue for="modularity_class" value="1"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5528.985" y="-5330.691"/>
+        <viz:color r="255" g="211" b="214"/>
+      </node>
+      <node id="Styr" label="Styr">
+        <attvalues>
+          <attvalue for="degree" value="2"/>
+          <attvalue for="weighted degree" value="23.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.3261538461538461"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3567610062893082"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="1.0"/>
+          <attvalue for="triangles" value="1"/>
+          <attvalue for="modularity_class" value="1"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5685.0454" y="-5428.163"/>
+        <viz:color r="255" g="211" b="214"/>
+      </node>
+      <node id="Val" label="Val">
+        <attvalues>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="31.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.3732394366197183"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.41147798742138386"/>
+          <attvalue for="betweenesscentrality" value="32.82423420322008"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.5"/>
+          <attvalue for="triangles" value="3"/>
+          <attvalue for="modularity_class" value="1"/>
+        </attvalues>
+        <viz:size value="8.333435"/>
+        <viz:position x="5502.9824" y="-5570.1636"/>
+        <viz:color r="255" g="211" b="214"/>
+      </node>
+      <node id="Ygritte" label="Ygritte">
+        <attvalues>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="82.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.3281733746130031"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3661949685534592"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="1.0"/>
+          <attvalue for="triangles" value="6"/>
+          <attvalue for="modularity_class" value="1"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5528.985" y="-5330.691"/>
+        <viz:color r="255" g="211" b="214"/>
+      </node>
+      <node id="Jon Arryn" label="Jon Arryn">
+        <attvalues>
+          <attvalue for="degree" value="2"/>
+          <attvalue for="weighted degree" value="11.0"/>
+          <attvalue for="eccentricity" value="4.0"/>
+          <attvalue for="closnesscentrality" value="0.34527687296416937"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3687106918238995"/>
+          <attvalue for="betweenesscentrality" value="3.207990620490622"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.0"/>
+          <attvalue for="triangles" value="0"/>
+          <attvalue for="modularity_class" value="2"/>
+        </attvalues>
+        <viz:size value="8.032587"/>
+        <viz:position x="5391.244" y="-5682.6274"/>
+        <viz:color r="190" g="254" b="255"/>
+      </node>
+      <node id="Lancel" label="Lancel">
+        <attvalues>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="7.0"/>
+          <attvalue for="eccentricity" value="6.0"/>
+          <attvalue for="closnesscentrality" value="0.2760416666666667"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.29528301886792424"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.0"/>
+          <attvalue for="triangles" value="0"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5543.8125" y="-5934.3257"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Olenna" label="Olenna">
+        <attvalues>
+          <attvalue for="degree" value="2"/>
+          <attvalue for="weighted degree" value="12.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.3408360128617363"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3691823899371071"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="1.0"/>
+          <attvalue for="triangles" value="1"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5549.6685" y="-5859.688"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Marillion" label="Marillion">
+        <attvalues>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="weighted degree" value="23.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.34415584415584416"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3770440251572329"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="1.0"/>
+          <attvalue for="triangles" value="3"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5550.935" y="-5901.461"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Robert Arryn" label="Robert Arryn">
+        <attvalues>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="weighted degree" value="19.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.34415584415584416"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3770440251572329"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="1.0"/>
+          <attvalue for="triangles" value="3"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5550.935" y="-5901.461"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Ellaria" label="Ellaria">
+        <attvalues>
+          <attvalue for="degree" value="2"/>
+          <attvalue for="weighted degree" value="10.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.3419354838709677"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3772012578616353"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="1.0"/>
+          <attvalue for="triangles" value="1"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5355.8433" y="-5955.0723"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Mace" label="Mace">
+        <attvalues>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="weighted degree" value="20.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.34868421052631576"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.38899371069182404"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="1.0"/>
+          <attvalue for="triangles" value="3"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5343.775" y="-5927.464"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Rickard" label="Rickard">
+        <attvalues>
+          <attvalue for="degree" value="2"/>
+          <attvalue for="weighted degree" value="11.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.3302180685358255"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3613207547169812"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="1.0"/>
+          <attvalue for="triangles" value="1"/>
+          <attvalue for="modularity_class" value="4"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5720.7134" y="-5760.978"/>
+        <viz:color r="216" g="255" b="224"/>
+      </node>
+      <node id="Ramsay" label="Ramsay">
+        <attvalues>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="4.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.32919254658385094"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3566037735849057"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.0"/>
+          <attvalue for="triangles" value="0"/>
+          <attvalue for="modularity_class" value="4"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5705.125" y="-5700.3315"/>
+        <viz:color r="216" g="255" b="224"/>
+      </node>
+      <node id="Chataya" label="Chataya">
+        <attvalues>
+          <attvalue for="degree" value="2"/>
+          <attvalue for="weighted degree" value="9.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.3408360128617363"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3756289308176102"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="1.0"/>
+          <attvalue for="triangles" value="1"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5297.7373" y="-5930.705"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Shireen" label="Shireen">
+        <attvalues>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="5.0"/>
+          <attvalue for="eccentricity" value="6.0"/>
+          <attvalue for="closnesscentrality" value="0.25"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.26525157232704394"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.0"/>
+          <attvalue for="triangles" value="0"/>
+          <attvalue for="modularity_class" value="6"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5333.252" y="-5487.7827"/>
+        <viz:color r="145" g="255" b="156"/>
+      </node>
+      <node id="Doran" label="Doran">
+        <attvalues>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="5.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.33974358974358976"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3709119496855347"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.0"/>
+          <attvalue for="triangles" value="0"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5272.1426" y="-5909.0605"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+      <node id="Walton" label="Walton">
+        <attvalues>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="10.0"/>
+          <attvalue for="eccentricity" value="5.0"/>
+          <attvalue for="closnesscentrality" value="0.32515337423312884"/>
+          <attvalue for="harmonicclosnesscentrality" value="0.3501572327044026"/>
+          <attvalue for="betweenesscentrality" value="0.0"/>
+          <attvalue for="componentnumber" value="0"/>
+          <attvalue for="clustering" value="0.0"/>
+          <attvalue for="triangles" value="0"/>
+          <attvalue for="modularity_class" value="0"/>
+        </attvalues>
+        <viz:size value="8.0"/>
+        <viz:position x="5309.778" y="-5708.0615"/>
+        <viz:color r="255" g="211" b="255"/>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="352" source="Aemon" target="Grenn" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="353" source="Aemon" target="Samwell" weight="31.0">
+        <viz:color r="72" g="152" b="176"/>
+      </edge>
+      <edge id="354" source="Aerys" target="Jaime" weight="18.0">
+        <viz:color r="90" g="179" b="202"/>
+      </edge>
+      <edge id="355" source="Aerys" target="Robert" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="356" source="Aerys" target="Tyrion" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="357" source="Aerys" target="Tywin" weight="8.0">
+        <viz:color r="109" g="204" b="225"/>
+      </edge>
+      <edge id="358" source="Alliser" target="Mance" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="359" source="Amory" target="Oberyn" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="360" source="Arya" target="Anguy" weight="11.0">
+        <viz:color r="103" g="197" b="218"/>
+      </edge>
+      <edge id="361" source="Arya" target="Beric" weight="23.0">
+        <viz:color r="81" g="166" b="190"/>
+      </edge>
+      <edge id="362" source="Arya" target="Bran" weight="9.0">
+        <viz:color r="107" g="202" b="223"/>
+      </edge>
+      <edge id="363" source="Arya" target="Brynden" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="364" source="Arya" target="Cersei" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="365" source="Arya" target="Gendry" weight="43.0">
+        <viz:color r="59" g="131" b="154"/>
+      </edge>
+      <edge id="366" source="Arya" target="Gregor" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="367" source="Arya" target="Jaime" weight="11.0">
+        <viz:color r="103" g="197" b="218"/>
+      </edge>
+      <edge id="368" source="Arya" target="Joffrey" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="369" source="Arya" target="Jon" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="370" source="Arya" target="Rickon" weight="8.0">
+        <viz:color r="109" g="204" b="225"/>
+      </edge>
+      <edge id="371" source="Arya" target="Robert" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="372" source="Arya" target="Roose" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="373" source="Arya" target="Sandor" weight="46.0">
+        <viz:color r="56" g="126" b="149"/>
+      </edge>
+      <edge id="374" source="Arya" target="Thoros" weight="18.0">
+        <viz:color r="90" g="179" b="202"/>
+      </edge>
+      <edge id="375" source="Arya" target="Tyrion" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="376" source="Balon" target="Loras" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="377" source="Belwas" target="Barristan" weight="18.0">
+        <viz:color r="90" g="179" b="202"/>
+      </edge>
+      <edge id="378" source="Belwas" target="Illyrio" weight="10.0">
+        <viz:color r="105" g="199" b="220"/>
+      </edge>
+      <edge id="379" source="Beric" target="Anguy" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="380" source="Beric" target="Gendry" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="381" source="Beric" target="Thoros" weight="21.0">
+        <viz:color r="85" g="171" b="195"/>
+      </edge>
+      <edge id="382" source="Bran" target="Hodor" weight="96.0">
+        <viz:color r="2" g="39" b="61"/>
+      </edge>
+      <edge id="383" source="Bran" target="Jojen" weight="46.0">
+        <viz:color r="56" g="126" b="149"/>
+      </edge>
+      <edge id="384" source="Bran" target="Jon" weight="12.0">
+        <viz:color r="101" g="194" b="216"/>
+      </edge>
+      <edge id="385" source="Bran" target="Luwin" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="386" source="Bran" target="Meera" weight="54.0">
+        <viz:color r="47" g="112" b="135"/>
+      </edge>
+      <edge id="387" source="Bran" target="Nan" weight="14.0">
+        <viz:color r="98" g="189" b="211"/>
+      </edge>
+      <edge id="388" source="Bran" target="Rickon" weight="35.0">
+        <viz:color r="68" g="145" b="169"/>
+      </edge>
+      <edge id="389" source="Bran" target="Samwell" weight="11.0">
+        <viz:color r="103" g="197" b="218"/>
+      </edge>
+      <edge id="390" source="Bran" target="Theon" weight="11.0">
+        <viz:color r="103" g="197" b="218"/>
+      </edge>
+      <edge id="391" source="Brienne" target="Loras" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="392" source="Bronn" target="Gregor" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="393" source="Bronn" target="Podrick" weight="19.0">
+        <viz:color r="88" g="176" b="199"/>
+      </edge>
+      <edge id="394" source="Brynden" target="Lothar" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="395" source="Brynden" target="Walder" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="396" source="Catelyn" target="Bran" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="397" source="Catelyn" target="Brienne" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="398" source="Catelyn" target="Brynden" weight="8.0">
+        <viz:color r="109" g="204" b="225"/>
+      </edge>
+      <edge id="399" source="Catelyn" target="Cersei" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="400" source="Catelyn" target="Edmure" weight="16.0">
+        <viz:color r="94" g="184" b="206"/>
+      </edge>
+      <edge id="401" source="Catelyn" target="Hoster" weight="9.0">
+        <viz:color r="107" g="202" b="223"/>
+      </edge>
+      <edge id="402" source="Catelyn" target="Jaime" weight="19.0">
+        <viz:color r="88" g="176" b="199"/>
+      </edge>
+      <edge id="403" source="Catelyn" target="Jeyne" weight="10.0">
+        <viz:color r="105" g="199" b="220"/>
+      </edge>
+      <edge id="404" source="Catelyn" target="Lysa" weight="8.0">
+        <viz:color r="109" g="204" b="225"/>
+      </edge>
+      <edge id="405" source="Catelyn" target="Petyr" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="406" source="Catelyn" target="Robb" weight="43.0">
+        <viz:color r="59" g="131" b="154"/>
+      </edge>
+      <edge id="407" source="Catelyn" target="Roose" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="408" source="Catelyn" target="Roslin" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="409" source="Catelyn" target="Sansa" weight="8.0">
+        <viz:color r="109" g="204" b="225"/>
+      </edge>
+      <edge id="410" source="Catelyn" target="Stannis" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="411" source="Catelyn" target="Tyrion" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="412" source="Catelyn" target="Walder" weight="19.0">
+        <viz:color r="88" g="176" b="199"/>
+      </edge>
+      <edge id="413" source="Cersei" target="Brienne" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="414" source="Cersei" target="Bronn" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="415" source="Cersei" target="Elia" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="416" source="Cersei" target="Gregor" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="417" source="Cersei" target="Ilyn" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="418" source="Cersei" target="Jaime" weight="36.0">
+        <viz:color r="67" g="143" b="167"/>
+      </edge>
+      <edge id="419" source="Cersei" target="Joffrey" weight="23.0">
+        <viz:color r="81" g="166" b="190"/>
+      </edge>
+      <edge id="420" source="Cersei" target="Meryn" weight="10.0">
+        <viz:color r="105" g="199" b="220"/>
+      </edge>
+      <edge id="421" source="Cersei" target="Pycelle" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="422" source="Cersei" target="Robert" weight="16.0">
+        <viz:color r="94" g="184" b="206"/>
+      </edge>
+      <edge id="423" source="Cersei" target="Sandor" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="424" source="Cersei" target="Shae" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="425" source="Cersei" target="Tyrion" weight="46.0">
+        <viz:color r="56" g="126" b="149"/>
+      </edge>
+      <edge id="426" source="Cersei" target="Varys" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="427" source="Craster" target="Karl" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="428" source="Daario" target="Drogo" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="429" source="Daario" target="Irri" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="430" source="Daenerys" target="Aegon" weight="8.0">
+        <viz:color r="109" g="204" b="225"/>
+      </edge>
+      <edge id="431" source="Daenerys" target="Barristan" weight="20.0">
+        <viz:color r="86" g="174" b="197"/>
+      </edge>
+      <edge id="432" source="Daenerys" target="Belwas" weight="26.0">
+        <viz:color r="77" g="161" b="184" a="0.99607843"/>
+      </edge>
+      <edge id="433" source="Daenerys" target="Daario" weight="14.0">
+        <viz:color r="98" g="189" b="211"/>
+      </edge>
+      <edge id="434" source="Daenerys" target="Drogo" weight="18.0">
+        <viz:color r="90" g="179" b="202"/>
+      </edge>
+      <edge id="435" source="Daenerys" target="Irri" weight="17.0">
+        <viz:color r="92" g="181" b="204"/>
+      </edge>
+      <edge id="436" source="Daenerys" target="Jorah" weight="47.0">
+        <viz:color r="55" g="124" b="147" a="0.99607843"/>
+      </edge>
+      <edge id="437" source="Daenerys" target="Kraznys" weight="10.0">
+        <viz:color r="105" g="199" b="220"/>
+      </edge>
+      <edge id="438" source="Daenerys" target="Missandei" weight="26.0">
+        <viz:color r="77" g="161" b="184" a="0.99607843"/>
+      </edge>
+      <edge id="439" source="Daenerys" target="Rakharo" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="440" source="Daenerys" target="Rhaegar" weight="12.0">
+        <viz:color r="101" g="194" b="216"/>
+      </edge>
+      <edge id="441" source="Daenerys" target="Robert" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="442" source="Daenerys" target="Viserys" weight="8.0">
+        <viz:color r="109" g="204" b="225"/>
+      </edge>
+      <edge id="443" source="Daenerys" target="Worm" weight="14.0">
+        <viz:color r="98" g="189" b="211"/>
+      </edge>
+      <edge id="444" source="Davos" target="Cressen" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="445" source="Davos" target="Salladhor" weight="16.0">
+        <viz:color r="94" g="184" b="206"/>
+      </edge>
+      <edge id="446" source="Eddard" target="Arya" weight="18.0">
+        <viz:color r="90" g="179" b="202"/>
+      </edge>
+      <edge id="447" source="Eddard" target="Beric" weight="8.0">
+        <viz:color r="109" g="204" b="225"/>
+      </edge>
+      <edge id="448" source="Eddard" target="Bran" weight="15.0">
+        <viz:color r="96" g="186" b="209"/>
+      </edge>
+      <edge id="449" source="Eddard" target="Catelyn" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="450" source="Eddard" target="Cersei" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="451" source="Eddard" target="Jaime" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="452" source="Eddard" target="Jon" weight="8.0">
+        <viz:color r="109" g="204" b="225"/>
+      </edge>
+      <edge id="453" source="Eddard" target="Rickon" weight="8.0">
+        <viz:color r="109" g="204" b="225"/>
+      </edge>
+      <edge id="454" source="Eddard" target="Robb" weight="13.0">
+        <viz:color r="100" g="191" b="213"/>
+      </edge>
+      <edge id="455" source="Eddard" target="Robert" weight="10.0">
+        <viz:color r="105" g="199" b="220"/>
+      </edge>
+      <edge id="456" source="Eddard" target="Sandor" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="457" source="Eddard" target="Sansa" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="458" source="Eddison" target="Grenn" weight="8.0">
+        <viz:color r="109" g="204" b="225"/>
+      </edge>
+      <edge id="459" source="Edmure" target="Brynden" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="460" source="Edmure" target="Lothar" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="461" source="Edmure" target="Roslin" weight="16.0">
+        <viz:color r="94" g="184" b="206"/>
+      </edge>
+      <edge id="462" source="Edmure" target="Walder" weight="9.0">
+        <viz:color r="107" g="202" b="223"/>
+      </edge>
+      <edge id="463" source="Gendry" target="Thoros" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="464" source="Gilly" target="Craster" weight="17.0">
+        <viz:color r="92" g="181" b="204"/>
+      </edge>
+      <edge id="465" source="Gregor" target="Elia" weight="9.0">
+        <viz:color r="107" g="202" b="223"/>
+      </edge>
+      <edge id="466" source="Gregor" target="Ilyn" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="467" source="Gregor" target="Meryn" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="468" source="Gregor" target="Oberyn" weight="24.0">
+        <viz:color r="80" g="164" b="188"/>
+      </edge>
+      <edge id="469" source="Gregor" target="Sandor" weight="12.0">
+        <viz:color r="101" g="194" b="216"/>
+      </edge>
+      <edge id="470" source="Hodor" target="Jojen" weight="35.0">
+        <viz:color r="68" g="145" b="169"/>
+      </edge>
+      <edge id="471" source="Hodor" target="Meera" weight="41.0">
+        <viz:color r="61" g="134" b="158"/>
+      </edge>
+      <edge id="472" source="Hoster" target="Edmure" weight="9.0">
+        <viz:color r="107" g="202" b="223"/>
+      </edge>
+      <edge id="473" source="Irri" target="Drogo" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="474" source="Jaime" target="Balon" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="475" source="Jaime" target="Barristan" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="476" source="Jaime" target="Brienne" weight="88.0">
+        <viz:color r="10" g="52" b="75"/>
+      </edge>
+      <edge id="477" source="Jaime" target="Edmure" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="478" source="Jaime" target="Elia" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="479" source="Jaime" target="Gregor" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="480" source="Jaime" target="Joffrey" weight="15.0">
+        <viz:color r="96" g="186" b="209"/>
+      </edge>
+      <edge id="481" source="Jaime" target="Loras" weight="16.0">
+        <viz:color r="94" g="184" b="206"/>
+      </edge>
+      <edge id="482" source="Jaime" target="Meryn" weight="11.0">
+        <viz:color r="103" g="197" b="218"/>
+      </edge>
+      <edge id="483" source="Jaime" target="Qyburn" weight="11.0">
+        <viz:color r="103" g="197" b="218"/>
+      </edge>
+      <edge id="484" source="Jaime" target="Renly" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="485" source="Jaime" target="Robert" weight="17.0">
+        <viz:color r="92" g="181" b="204"/>
+      </edge>
+      <edge id="486" source="Jaime" target="Stannis" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="487" source="Jaime" target="Tommen" weight="8.0">
+        <viz:color r="109" g="204" b="225"/>
+      </edge>
+      <edge id="488" source="Jaime" target="Tyrion" weight="31.0">
+        <viz:color r="72" g="152" b="176"/>
+      </edge>
+      <edge id="489" source="Janos" target="Alliser" weight="9.0">
+        <viz:color r="107" g="202" b="223"/>
+      </edge>
+      <edge id="490" source="Janos" target="Bowen" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="491" source="Janos" target="Mance" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="492" source="Joffrey" target="Gregor" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="493" source="Joffrey" target="Ilyn" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="494" source="Joffrey" target="Kevan" weight="8.0">
+        <viz:color r="109" g="204" b="225"/>
+      </edge>
+      <edge id="495" source="Joffrey" target="Loras" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="496" source="Joffrey" target="Margaery" weight="28.0">
+        <viz:color r="75" g="157" b="181"/>
+      </edge>
+      <edge id="497" source="Joffrey" target="Meryn" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="498" source="Joffrey" target="Myrcella" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="499" source="Joffrey" target="Oberyn" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="500" source="Joffrey" target="Sandor" weight="14.0">
+        <viz:color r="98" g="189" b="211"/>
+      </edge>
+      <edge id="501" source="Joffrey" target="Stannis" weight="10.0">
+        <viz:color r="105" g="199" b="220"/>
+      </edge>
+      <edge id="502" source="Joffrey" target="Tommen" weight="9.0">
+        <viz:color r="107" g="202" b="223"/>
+      </edge>
+      <edge id="503" source="Joffrey" target="Tyrion" weight="54.0">
+        <viz:color r="47" g="112" b="135"/>
+      </edge>
+      <edge id="504" source="Jojen" target="Meera" weight="33.0">
+        <viz:color r="70" g="148" b="172"/>
+      </edge>
+      <edge id="505" source="Jojen" target="Samwell" weight="11.0">
+        <viz:color r="103" g="197" b="218"/>
+      </edge>
+      <edge id="506" source="Jon" target="Aemon" weight="30.0">
+        <viz:color r="73" g="154" b="177"/>
+      </edge>
+      <edge id="507" source="Jon" target="Alliser" weight="15.0">
+        <viz:color r="96" g="186" b="209"/>
+      </edge>
+      <edge id="508" source="Jon" target="Craster" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="509" source="Jon" target="Dalla" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="510" source="Jon" target="Eddison" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="511" source="Jon" target="Gilly" weight="9.0">
+        <viz:color r="107" g="202" b="223"/>
+      </edge>
+      <edge id="512" source="Jon" target="Grenn" weight="25.0">
+        <viz:color r="79" g="162" b="186"/>
+      </edge>
+      <edge id="513" source="Jon" target="Janos" weight="8.0">
+        <viz:color r="109" g="204" b="225"/>
+      </edge>
+      <edge id="514" source="Jon" target="Mance" weight="69.0">
+        <viz:color r="31" g="86" b="108"/>
+      </edge>
+      <edge id="515" source="Jon" target="Meera" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="516" source="Jon" target="Melisandre" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="517" source="Jon" target="Orell" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="518" source="Jon" target="Qhorin" weight="31.0">
+        <viz:color r="72" g="152" b="176"/>
+      </edge>
+      <edge id="519" source="Jon" target="Rattleshirt" weight="20.0">
+        <viz:color r="86" g="174" b="197"/>
+      </edge>
+      <edge id="520" source="Jon" target="Robert" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="521" source="Jon" target="Samwell" weight="52.0">
+        <viz:color r="49" g="115" b="138" a="0.99607843"/>
+      </edge>
+      <edge id="522" source="Jon" target="Stannis" weight="9.0">
+        <viz:color r="107" g="202" b="223"/>
+      </edge>
+      <edge id="523" source="Jon" target="Styr" weight="16.0">
+        <viz:color r="94" g="184" b="206"/>
+      </edge>
+      <edge id="524" source="Jon" target="Theon" weight="8.0">
+        <viz:color r="109" g="204" b="225"/>
+      </edge>
+      <edge id="525" source="Jon" target="Val" weight="12.0">
+        <viz:color r="101" g="194" b="216"/>
+      </edge>
+      <edge id="526" source="Jon" target="Ygritte" weight="54.0">
+        <viz:color r="47" g="112" b="135"/>
+      </edge>
+      <edge id="527" source="Jon Arryn" target="Lysa" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="528" source="Jon Arryn" target="Robert" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="529" source="Jorah" target="Barristan" weight="11.0">
+        <viz:color r="103" g="197" b="218"/>
+      </edge>
+      <edge id="530" source="Jorah" target="Belwas" weight="13.0">
+        <viz:color r="100" g="191" b="213"/>
+      </edge>
+      <edge id="531" source="Jorah" target="Daario" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="532" source="Jorah" target="Drogo" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="533" source="Kevan" target="Lancel" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="534" source="Kevan" target="Varys" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="535" source="Loras" target="Margaery" weight="9.0">
+        <viz:color r="107" g="202" b="223"/>
+      </edge>
+      <edge id="536" source="Loras" target="Olenna" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="537" source="Lothar" target="Roslin" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="538" source="Luwin" target="Nan" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="539" source="Lysa" target="Cersei" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="540" source="Lysa" target="Hoster" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="541" source="Lysa" target="Marillion" weight="10.0">
+        <viz:color r="105" g="199" b="220"/>
+      </edge>
+      <edge id="542" source="Lysa" target="Petyr" weight="29.0">
+        <viz:color r="74" g="155" b="179"/>
+      </edge>
+      <edge id="543" source="Lysa" target="Robert Arryn" weight="9.0">
+        <viz:color r="107" g="202" b="223"/>
+      </edge>
+      <edge id="544" source="Lysa" target="Tyrion" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="545" source="Lysa" target="Tywin" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="546" source="Mance" target="Craster" weight="11.0">
+        <viz:color r="103" g="197" b="218"/>
+      </edge>
+      <edge id="547" source="Mance" target="Dalla" weight="8.0">
+        <viz:color r="109" g="204" b="225"/>
+      </edge>
+      <edge id="548" source="Mance" target="Gilly" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="549" source="Mance" target="Qhorin" weight="10.0">
+        <viz:color r="105" g="199" b="220"/>
+      </edge>
+      <edge id="550" source="Mance" target="Rattleshirt" weight="9.0">
+        <viz:color r="107" g="202" b="223"/>
+      </edge>
+      <edge id="551" source="Mance" target="Styr" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="552" source="Mance" target="Val" weight="8.0">
+        <viz:color r="109" g="204" b="225"/>
+      </edge>
+      <edge id="553" source="Mance" target="Ygritte" weight="12.0">
+        <viz:color r="101" g="194" b="216"/>
+      </edge>
+      <edge id="554" source="Meera" target="Samwell" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="555" source="Melisandre" target="Davos" weight="30.0">
+        <viz:color r="73" g="154" b="177"/>
+      </edge>
+      <edge id="556" source="Melisandre" target="Samwell" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="557" source="Meryn" target="Ilyn" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="558" source="Missandei" target="Irri" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="559" source="Myrcella" target="Tommen" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="560" source="Myrcella" target="Tyrion" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="561" source="Oberyn" target="Ellaria" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="562" source="Oberyn" target="Mace" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="563" source="Podrick" target="Margaery" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="564" source="Rattleshirt" target="Qhorin" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="565" source="Renly" target="Loras" weight="8.0">
+        <viz:color r="109" g="204" b="225"/>
+      </edge>
+      <edge id="566" source="Renly" target="Margaery" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="567" source="Renly" target="Varys" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="568" source="Rhaegar" target="Barristan" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="569" source="Rhaegar" target="Elia" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="570" source="Rhaegar" target="Jorah" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="571" source="Rhaegar" target="Robert" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="572" source="Rickard" target="Brynden" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="573" source="Rickon" target="Theon" weight="8.0">
+        <viz:color r="109" g="204" b="225"/>
+      </edge>
+      <edge id="574" source="Robb" target="Arya" weight="15.0">
+        <viz:color r="96" g="186" b="209"/>
+      </edge>
+      <edge id="575" source="Robb" target="Balon" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="576" source="Robb" target="Bran" weight="23.0">
+        <viz:color r="81" g="166" b="190"/>
+      </edge>
+      <edge id="577" source="Robb" target="Brienne" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="578" source="Robb" target="Brynden" weight="17.0">
+        <viz:color r="92" g="181" b="204"/>
+      </edge>
+      <edge id="579" source="Robb" target="Edmure" weight="32.0">
+        <viz:color r="71" g="150" b="174"/>
+      </edge>
+      <edge id="580" source="Robb" target="Hodor" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="581" source="Robb" target="Jaime" weight="15.0">
+        <viz:color r="96" g="186" b="209"/>
+      </edge>
+      <edge id="582" source="Robb" target="Jeyne" weight="18.0">
+        <viz:color r="90" g="179" b="202"/>
+      </edge>
+      <edge id="583" source="Robb" target="Joffrey" weight="10.0">
+        <viz:color r="105" g="199" b="220"/>
+      </edge>
+      <edge id="584" source="Robb" target="Jon" weight="14.0">
+        <viz:color r="98" g="189" b="211"/>
+      </edge>
+      <edge id="585" source="Robb" target="Lothar" weight="10.0">
+        <viz:color r="105" g="199" b="220"/>
+      </edge>
+      <edge id="586" source="Robb" target="Petyr" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="587" source="Robb" target="Ramsay" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="588" source="Robb" target="Rickard" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="589" source="Robb" target="Rickon" weight="15.0">
+        <viz:color r="96" g="186" b="209"/>
+      </edge>
+      <edge id="590" source="Robb" target="Roose" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="591" source="Robb" target="Sansa" weight="15.0">
+        <viz:color r="96" g="186" b="209"/>
+      </edge>
+      <edge id="592" source="Robb" target="Stannis" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="593" source="Robb" target="Theon" weight="11.0">
+        <viz:color r="103" g="197" b="218"/>
+      </edge>
+      <edge id="594" source="Robb" target="Tyrion" weight="12.0">
+        <viz:color r="101" g="194" b="216"/>
+      </edge>
+      <edge id="595" source="Robb" target="Tywin" weight="12.0">
+        <viz:color r="101" g="194" b="216"/>
+      </edge>
+      <edge id="596" source="Robb" target="Walder" weight="26.0">
+        <viz:color r="77" g="161" b="184" a="0.99607843"/>
+      </edge>
+      <edge id="597" source="Robert" target="Aemon" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="598" source="Robert" target="Barristan" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="599" source="Robert" target="Renly" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="600" source="Robert" target="Stannis" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="601" source="Robert" target="Thoros" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="602" source="Robert Arryn" target="Marillion" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="603" source="Roose" target="Brienne" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="604" source="Samwell" target="Bowen" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="605" source="Samwell" target="Craster" weight="34.0">
+        <viz:color r="69" g="147" b="170"/>
+      </edge>
+      <edge id="606" source="Samwell" target="Eddison" weight="12.0">
+        <viz:color r="101" g="194" b="216"/>
+      </edge>
+      <edge id="607" source="Samwell" target="Gilly" weight="36.0">
+        <viz:color r="67" g="143" b="167"/>
+      </edge>
+      <edge id="608" source="Samwell" target="Grenn" weight="43.0">
+        <viz:color r="59" g="131" b="154"/>
+      </edge>
+      <edge id="609" source="Samwell" target="Janos" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="610" source="Samwell" target="Mance" weight="10.0">
+        <viz:color r="105" g="199" b="220"/>
+      </edge>
+      <edge id="611" source="Samwell" target="Qhorin" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="612" source="Sandor" target="Beric" weight="15.0">
+        <viz:color r="96" g="186" b="209"/>
+      </edge>
+      <edge id="613" source="Sandor" target="Gendry" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="614" source="Sandor" target="Ilyn" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="615" source="Sandor" target="Meryn" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="616" source="Sandor" target="Robert" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="617" source="Sandor" target="Thoros" weight="10.0">
+        <viz:color r="105" g="199" b="220"/>
+      </edge>
+      <edge id="618" source="Sansa" target="Arya" weight="22.0">
+        <viz:color r="83" g="168" b="192"/>
+      </edge>
+      <edge id="619" source="Sansa" target="Bran" weight="10.0">
+        <viz:color r="105" g="199" b="220"/>
+      </edge>
+      <edge id="620" source="Sansa" target="Brienne" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="621" source="Sansa" target="Cersei" weight="16.0">
+        <viz:color r="94" g="184" b="206"/>
+      </edge>
+      <edge id="622" source="Sansa" target="Jaime" weight="10.0">
+        <viz:color r="105" g="199" b="220"/>
+      </edge>
+      <edge id="623" source="Sansa" target="Joffrey" weight="35.0">
+        <viz:color r="68" g="145" b="169"/>
+      </edge>
+      <edge id="624" source="Sansa" target="Jon" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="625" source="Sansa" target="Kevan" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="626" source="Sansa" target="Loras" weight="14.0">
+        <viz:color r="98" g="189" b="211"/>
+      </edge>
+      <edge id="627" source="Sansa" target="Lysa" weight="28.0">
+        <viz:color r="75" g="157" b="181"/>
+      </edge>
+      <edge id="628" source="Sansa" target="Margaery" weight="36.0">
+        <viz:color r="67" g="143" b="167"/>
+      </edge>
+      <edge id="629" source="Sansa" target="Marillion" weight="9.0">
+        <viz:color r="107" g="202" b="223"/>
+      </edge>
+      <edge id="630" source="Sansa" target="Myrcella" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="631" source="Sansa" target="Olenna" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="632" source="Sansa" target="Petyr" weight="28.0">
+        <viz:color r="75" g="157" b="181"/>
+      </edge>
+      <edge id="633" source="Sansa" target="Podrick" weight="8.0">
+        <viz:color r="109" g="204" b="225"/>
+      </edge>
+      <edge id="634" source="Sansa" target="Renly" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="635" source="Sansa" target="Rickon" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="636" source="Sansa" target="Robert" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="637" source="Sansa" target="Robert Arryn" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="638" source="Sansa" target="Sandor" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="639" source="Sansa" target="Shae" weight="8.0">
+        <viz:color r="109" g="204" b="225"/>
+      </edge>
+      <edge id="640" source="Sansa" target="Tyrion" weight="77.0">
+        <viz:color r="22" g="72" b="94"/>
+      </edge>
+      <edge id="641" source="Shae" target="Chataya" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="642" source="Shae" target="Varys" weight="8.0">
+        <viz:color r="109" g="204" b="225"/>
+      </edge>
+      <edge id="643" source="Shireen" target="Davos" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="644" source="Stannis" target="Aemon" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="645" source="Stannis" target="Balon" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="646" source="Stannis" target="Davos" weight="32.0">
+        <viz:color r="71" g="150" b="174"/>
+      </edge>
+      <edge id="647" source="Stannis" target="Melisandre" weight="20.0">
+        <viz:color r="86" g="174" b="197"/>
+      </edge>
+      <edge id="648" source="Stannis" target="Renly" weight="15.0">
+        <viz:color r="96" g="186" b="209"/>
+      </edge>
+      <edge id="649" source="Stannis" target="Samwell" weight="13.0">
+        <viz:color r="100" g="191" b="213"/>
+      </edge>
+      <edge id="650" source="Tommen" target="Margaery" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="651" source="Tyrion" target="Balon" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="652" source="Tyrion" target="Bronn" weight="31.0">
+        <viz:color r="72" g="152" b="176"/>
+      </edge>
+      <edge id="653" source="Tyrion" target="Chataya" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="654" source="Tyrion" target="Doran" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="655" source="Tyrion" target="Elia" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="656" source="Tyrion" target="Ellaria" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="657" source="Tyrion" target="Gregor" weight="22.0">
+        <viz:color r="83" g="168" b="192"/>
+      </edge>
+      <edge id="658" source="Tyrion" target="Ilyn" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="659" source="Tyrion" target="Janos" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="660" source="Tyrion" target="Kevan" weight="11.0">
+        <viz:color r="103" g="197" b="218"/>
+      </edge>
+      <edge id="661" source="Tyrion" target="Loras" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="662" source="Tyrion" target="Mace" weight="9.0">
+        <viz:color r="107" g="202" b="223"/>
+      </edge>
+      <edge id="663" source="Tyrion" target="Margaery" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="664" source="Tyrion" target="Meryn" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="665" source="Tyrion" target="Oberyn" weight="25.0">
+        <viz:color r="79" g="162" b="186"/>
+      </edge>
+      <edge id="666" source="Tyrion" target="Petyr" weight="12.0">
+        <viz:color r="101" g="194" b="216"/>
+      </edge>
+      <edge id="667" source="Tyrion" target="Podrick" weight="28.0">
+        <viz:color r="75" g="157" b="181"/>
+      </edge>
+      <edge id="668" source="Tyrion" target="Pycelle" weight="11.0">
+        <viz:color r="103" g="197" b="218"/>
+      </edge>
+      <edge id="669" source="Tyrion" target="Renly" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="670" source="Tyrion" target="Robert" weight="9.0">
+        <viz:color r="107" g="202" b="223"/>
+      </edge>
+      <edge id="671" source="Tyrion" target="Sandor" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="672" source="Tyrion" target="Shae" weight="21.0">
+        <viz:color r="85" g="171" b="195"/>
+      </edge>
+      <edge id="673" source="Tyrion" target="Stannis" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="674" source="Tyrion" target="Varys" weight="18.0">
+        <viz:color r="90" g="179" b="202"/>
+      </edge>
+      <edge id="675" source="Tywin" target="Balon" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="676" source="Tywin" target="Brynden" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="677" source="Tywin" target="Cersei" weight="16.0">
+        <viz:color r="94" g="184" b="206"/>
+      </edge>
+      <edge id="678" source="Tywin" target="Gregor" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="679" source="Tywin" target="Jaime" weight="13.0">
+        <viz:color r="100" g="191" b="213"/>
+      </edge>
+      <edge id="680" source="Tywin" target="Joffrey" weight="13.0">
+        <viz:color r="100" g="191" b="213"/>
+      </edge>
+      <edge id="681" source="Tywin" target="Kevan" weight="14.0">
+        <viz:color r="98" g="189" b="211"/>
+      </edge>
+      <edge id="682" source="Tywin" target="Mace" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="683" source="Tywin" target="Oberyn" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="684" source="Tywin" target="Petyr" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="685" source="Tywin" target="Podrick" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="686" source="Tywin" target="Pycelle" weight="5.0">
+        <viz:color r="115" g="212" b="232"/>
+      </edge>
+      <edge id="687" source="Tywin" target="Robert" weight="11.0">
+        <viz:color r="103" g="197" b="218"/>
+      </edge>
+      <edge id="688" source="Tywin" target="Stannis" weight="15.0">
+        <viz:color r="96" g="186" b="209"/>
+      </edge>
+      <edge id="689" source="Tywin" target="Tommen" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="690" source="Tywin" target="Tyrion" weight="39.0">
+        <viz:color r="63" g="138" b="161"/>
+      </edge>
+      <edge id="691" source="Tywin" target="Val" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="692" source="Tywin" target="Varys" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="693" source="Tywin" target="Walder" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="694" source="Val" target="Dalla" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="695" source="Varys" target="Pycelle" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="696" source="Viserys" target="Rhaegar" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="697" source="Viserys" target="Tyrion" weight="4.0">
+        <viz:color r="117" g="215" b="235"/>
+      </edge>
+      <edge id="698" source="Walder" target="Lothar" weight="12.0">
+        <viz:color r="101" g="194" b="216"/>
+      </edge>
+      <edge id="699" source="Walder" target="Petyr" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="700" source="Walder" target="Roslin" weight="6.0">
+        <viz:color r="113" g="209" b="230"/>
+      </edge>
+      <edge id="701" source="Walton" target="Jaime" weight="10.0">
+        <viz:color r="105" g="199" b="220"/>
+      </edge>
+      <edge id="702" source="Ygritte" target="Qhorin" weight="7.0">
+        <viz:color r="111" g="207" b="227"/>
+      </edge>
+      <edge id="703" source="Ygritte" target="Rattleshirt" weight="9.0">
+        <viz:color r="107" g="202" b="223"/>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
