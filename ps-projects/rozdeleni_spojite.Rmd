@@ -1,0 +1,198 @@
+## Exponenciální rozdělení
+
+```{r}
+# hustota pravděpodobnosti
+EXP_HP <- function(count, lambda) {
+  x = seq(from = 0, to = count, by = 0.01)
+  f_x = dexp(x, lambda)
+  plot(x, f_x, type="l",
+       xlab="nahodna velicina", ylab="hustota", 
+       main="Hustota pravděpodobnosti",pch=5)
+  grid()
+}
+
+# distribucni funkce
+EXP_DF <- function(count, lambda) {
+  x = seq(from = 0, to = count, by = 0.01)
+  F_x = pexp(x, lambda)
+  plot(x, F_x, type="l",
+       xlab="nahodna velicina", ylab="pravdepodobnost pro X < a", 
+       main="Diskretni funkce",pch=19)
+  grid()
+}
+
+# vypocetni funkce
+EXP <- function(type, k, lambda, prob) {
+  if (type == "=") {
+    return (paste("Pravdepodobnost v R (dexp(k,ʎ)):", dexp(k, lambda)))
+  }
+  if (type == "<") {
+    return (paste("Pravdepodobnost v R (pexp(k,ʎ)):", pexp(k, lambda)))
+  }
+  if (type == "q") {
+    return (paste(prob*100, "% kvantil v R (qexp(prob,ʎ)):", qexp(prob, lambda)))
+  }
+}
+
+# stredni hodnota
+EXP_E <- function(lambda) { 
+  return (paste("Stredni hodnota:", 1 / lambda))
+}
+
+# rozptyl
+EXP_D <- function(lambda) {
+  return (paste("Rozptyl:", 1/(lambda * lambda)))
+}
+```
+
+### Použití
+
+$$
+X \sim Exp(\lambda)
+$$
+
+```{r}
+lambda = 2      # pravděpodobnost výskytu ke kontextu plochy nebo času
+k = 0.9              # počet pokusů pro hledanou pravděpodobnost
+prob = 0.75         # procentuální kvantil náhodné veličiny
+
+EXP("<", k, lambda, prob)
+EXP_E(lambda)
+EXP_D(lambda)
+
+# --------- #
+
+count = 10      # zobrazení hodnot náhodné veličiny
+
+EXP_HP(count, lambda)
+EXP_DF(count, lambda)
+```
+
+## Weibullovo rozdělení
+
+```{r}
+# hustota pravděpodobnosti
+WEI_HP <- function(count, theta, beta) {
+  x = seq(from = 0, to = count, by = 0.01)
+  f_x = dweibull(x, shape=beta, scale=theta)
+  plot(x, f_x, type="l",
+       xlab="nahodna velicina", ylab="hustota", 
+       main="Hustota pravděpodobnosti",pch=19)
+  grid()
+}
+
+# distribucni funkce
+WEI_DF <- function(count, theta, beta) {
+  x = seq(from = 0, to = count, by = 0.01)
+  F_x = pweibull(x, shape=beta, scale=theta)
+  plot(x, F_x, type="l",
+       xlab="nahodna velicina", ylab="pravdepodobnost pro X < a", 
+       main="Diskretni funkce",pch=19)
+  grid()
+}
+
+# vypocetni funkce
+WEI <- function(type, k, theta, beta, prob) {
+  if (type == "=") {
+    return (paste("Pravdepodobnost v R (dweibull(k,θ,β)):", dweibull(k, shape=beta, scale=theta)))
+  }
+  if (type == "<") {
+    return (paste("Pravdepodobnost v R (pweibull(k,θ,β)):", pweibull(k, shape=beta, scale=theta)))
+  }
+  if (type == "q") {
+    return (paste(prob*100, "% kvantil v R (qweibull(prob,θ,β)):", qweibull(prob, shape=beta, scale=theta)))
+  }
+}
+```
+
+### Použití
+
+$$
+X \sim Wei(\theta;\beta), \theta = \frac{1}{\lambda}
+$$
+
+```{r}
+theta = 50         # parametr měřítka
+beta = 3           # parametr tvaru (typ rizikové funkce)
+k = 12              # počet pokusů pro hledanou pravděpodobnost
+prob = 1         # procentuální kvantil náhodné veličiny
+
+WEI("<", k, theta, beta, prob)
+
+# --------- #
+
+count = 150      # zobrazení hodnot náhodné veličiny
+
+WEI_HP(count, theta, beta)
+WEI_DF(count, theta, beta)
+```
+
+## Normální nenormované rozdělení
+
+```{r}
+# hustota pravděpodobnosti
+NOR_HP <- function(count, mu, sigma) {
+  x = seq(from = -count+mu, to = count+mu, by = 0.01)
+  f_x = dnorm(x, mean=mu, sd=sigma)
+  plot(x, f_x, type="l",
+       xlab="nahodna velicina", ylab="hustota", 
+       main="Hustota pravděpodobnosti",pch=19)
+  grid()
+}
+
+# distribucni funkce
+NOR_DF <- function(count, mu, sigma) {
+  x = seq(from = -count+mu, to = count+mu, by = 0.01)
+  F_x = pnorm(x, mean=mu, sd=sigma)
+  plot(x, F_x, type="l",
+       xlab="nahodna velicina", ylab="pravdepodobnost pro X < a", 
+       main="Diskretni funkce",pch=19)
+  grid()
+}
+
+# vypocetni funkce
+NOR <- function(type, k, mu, sigma, prob) {
+  if (type == "=") {
+    return (paste("Pravdepodobnost v R (dnorm(k,μ,σ)):", dnorm(k, mean=mu, sd=sigma)))
+  }
+  if (type == "<") {
+    return (paste("Pravdepodobnost v R (pnorm(k,μ,σ)):", pnorm(k, mean=mu, sd=sigma)))
+  }
+  if (type == "q") {
+    return (paste(prob*100, "% kvantil v R (qnorm(prob,μ,σ)):", qnorm(prob, mean=mu, sd=sigma)))
+  }
+}
+
+# vypocetni funkce standardizovana
+NOR_S <- function(type, k, mu, sigma) {
+  if (type == "=") {
+    return (paste("Pravdepodobnost v R (dnorm(k,μ,σ)):", dnorm(k, mean=0, sd=1)))
+  }
+  if (type == "<") {
+    return (paste("Standardizovana distribucni funkce θ(", (k - mu) / sigma, ")"))
+  }
+}
+```
+
+### Použití
+
+$$
+X \sim N(\mu;\sigma^2),\space E(X)=\mu,\space D(x)=\sigma^2
+$$
+
+```{r}
+mu = 3.3               # střední hodnota
+sigma = 0.6           # směrodatná odchylka (R chce směrodatnou odchylku místo rozptylu)
+k = 100              # počet pokusů pro hledanou pravděpodobnost
+prob = 0.25         # procentuální kvantil náhodné veličiny
+
+NOR("<", k, mu, sigma, prob)
+NOR_S("<", k, mu, sigma)                  # standardizovana distribucni funkce pro tabulku
+
+# --------- #
+
+count = 20  # zobrazení hodnot náhodné veličiny
+
+NOR_HP(count, mu, sigma)
+NOR_DF(count, mu, sigma)
+```

@@ -1,0 +1,49 @@
+## Úplná pravděpodobnost
+
+$$
+P(A) = \sum_{i = 1}^n P(A|B_i) * P(B_i)
+$$
+
+```{r}
+upln <- function(P_B, P_AB) {
+  P_A = 0
+  for (i in 1:length(P_B)) {
+    P_A = P_A + P_B[i]*P_AB[i]
+  }
+  
+  return (P_A)
+}
+```
+
+## Bayesova věta
+
+$$
+P(B_k|A) = \frac{P(A|B_k) * P(B_k)}{\sum_{i = 1}^n P(A|B_i) * P(B_i)}
+$$
+
+```{r}
+bayes <- function(P_B, P_AB, k) {
+  P_A = upln(P_B, P_AB)
+  P_BkA = P_B[k]*P_AB[k]/P_A
+  
+  return (P_BkA)
+}
+```
+
+------------------------------------------------------------------------
+
+## Použití
+
+```{r}
+# disjunktní samostatné jevy P(Bi) a P(Bj) atd...
+P_B = c(0.3, 0.5, 0.2)
+# vyber pro bayese, které z c() výše chci spočítat
+k = 1
+# podmíněné jevy P(A|Bi) a P(A|Bj) atd... 
+P_AB = c(0.2, 0.1, 0.25)
+
+# uplna pravdepodobnost
+print(paste("Uplna pravdepodobnost: ", upln(P_B, P_AB)))
+# bayesova veta
+print(paste("Bayesova veta: ",bayes(P_B, P_AB, k)))
+```

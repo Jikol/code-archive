@@ -1,0 +1,93 @@
+# Diskrétní rozdělení
+
+## Binomické (Alternativní)
+
+$$X \sim Bi(n, π), $$ $$X \sim A(π) = Bi(1, π)$$ $$E(X) = n\pi, \quad D(X) = n\pi(1-\pi)$$
+
+```{r}
+# values
+k <- 15 # hodnota pro zjištění pravděpodobnosti
+n <- 40 # velikost výběru
+p <- 0.25 # pravděpodobnost úspěchu
+# P(X = k)
+dbinom(k, n, p)
+# P(X <= k)
+pbinom(k, n, p)
+# P(X < k)
+pbinom(k - 1, n, p)
+# P(X >= k)
+1 - pbinom(k - 1, n, p)
+# P(X > k)
+1 - pbinom(k, n, p)
+```
+
+## Hypergeometrické
+
+$$X \sim H(N, M, n)$$
+
+```{r}
+# values
+k <- 8 # hodnota pro zjištění pravděpodobnosti
+N <- 200 # celkový počet objektů
+M <- 50 # pocet objektů s danou vlastností
+n <- 20 # velikost výběru
+# P(X = k)
+dhyper(k, M, N - M, n)
+# P(X <= k)
+phyper(k, M, N - M, n)
+# P(X < k)
+phyper(k - 1, M, N - M, n)
+# P(X >= k)
+1 - phyper(k - 1, M, N - M, n)
+# P(X > k)
+1 - phyper(k, M, N - M, n)
+```
+
+## Negativně binomické (Geometrické)
+
+$$X \sim NB(k, \pi) $$
+
+$$X \sim Ge(\pi) = NB(1, \pi)$$
+
+```{r}
+# values
+k <- 7 # počet pokusů pro zjištění pravděpodobnosti
+n <- 3 # požadovaný počet úspěchů
+p <- 0.35 # pravděpodobnost úspěchu
+# P(X = k)
+dnbinom(k - n, n, p)
+# P(X <= k)
+pnbinom(k - n, n, p)
+# P(X < k)
+pnbinom(k - n - 1, n, p)
+# P(X >= k)
+1 - pnbinom(k - n - 1, n, p)
+# P(X > k)
+1 - pnbinom(k - n, n, p)
+# P(k < X kk)
+k <- 7 # počet pokusů pro zjištění pravděpodobnosti
+kk <- 12 # počet pokusů pro zjištění pravděpodobnosti
+pnbinom(kk - n - 1, n, p) - pnbinom(k - n, n, p)
+```
+## Poissonovo rozdělení
+
+ $$X \sim Po(\lambda t)$$
+
+$$E(X) = \lambda t, \quad D(X) = \lambda t$$
+
+```{r}
+# values
+k <- 10 # počet pokusů pro zjištění pravděpodobnosti
+lambda <- 5 # hustota výskytu
+t <- 2 # pravd. jednotlivých pokusů
+# P(X = k)
+dpois(k, lambda * t)
+# P(X <= k)
+ppois(k, lambda * t)
+# P(X < k)
+ppois(k - 1, lambda * t)
+# P(X >= k)
+1 - ppois(k - 1, lambda * t)
+# P(X > k)
+1 - ppois(k, lambda * t)
+``` 

@@ -1,0 +1,70 @@
+## Variace V(n,k)
+
+```{r}
+V <- function(n, k) {
+  c = factorial(n)
+  j = factorial(n-k)
+  
+  return (c/j)
+}
+```
+
+## Variace s opakováním V\*(n, k)
+
+```{r}
+V_ <- function(n, k) {
+  return (n^k)
+}
+```
+
+## Permutace P(n) = V(n, n)
+
+```{r}
+P <- function(n) {
+  return (V(n, n))
+}
+```
+
+## Permutace s opakováním P\*(n1, n2, n3, ..., nk)
+
+```{r}
+P_ <- function(vec_n) {
+  n = sum(vec_n) # velikost vektoru
+  res_temp = factorial(n)
+  for (pocet in vec_n) {
+    res_temp = res_temp / factorial(pocet)
+  }
+  
+  return (res_temp)
+}
+```
+
+## Kombinace C(n, k)
+
+```{r}
+C <- function(n, k) {
+  return (choose(n, k))
+}
+```
+
+## Kombinace s opakováním C\*(n, k)
+
+```{r}
+C_ <- function(n, k) {
+  return (choose(n+k-1, k))
+}
+```
+
+------------------------------------------------------------------------
+
+## Použití
+
+```{r}
+P(10)
+V(10, 5)
+C(10, 5)
+
+P_(c(10, 5, 2))
+V_(2, 5)
+C_(10, 5)
+```

@@ -1,0 +1,327 @@
+## Binomické rozdělení
+
+```{r}
+# pravdepodobnostni funkce
+BIN_PF <- function(to, prob, pos) {
+  P_x = dbinom(0:to, to, prob)
+  plot(0:to, P_x, type="p",
+       xlab="nahodna velicina", ylab="pravdepodobnost", 
+       main="Pravdepodobnosti funkce",pch=19)
+  text(0:to, P_x, paste(0:to,";",round(P_x, digits=3),sep=""), pos=pos)
+  grid()
+  P_x = round(P_x, 3)
+  P_x[to + 1] = 1 - sum(P_x[1:to])
+  tab = rbind(0:to, P_x)
+  rownames(tab) = c("x", "P(x)")
+  tab
+}
+
+# distribucni funkce
+BIN_DF <- function(to, prob) {
+  P_x = dbinom(0:to, to, prob)
+  F_x = cumsum(P_x)
+  plot(0:to, F_x, type="s",
+       xlab="nahodna velicina", ylab="pravdepodobnost", 
+       main="Distribucni funkce")
+  grid()
+  F_x = round(F_x, 3)
+  F_x[to + 1] = 1 - sum(F_x[1:to])
+  tab = rbind(0:to, F_x)
+  rownames(tab) = c("x", "F(x)")
+  tab
+}
+
+# vypocetni funkce
+BIN <- function(type, k, n, pi, prob) {
+  if (type == "=") {
+    return (paste("Pravdepodobnost v R (dbinom(k,n,π)):", dbinom(k, n, pi)))
+  }
+  if (type == "<") {
+    return (paste("Pravdepodobnost v R (pbinom(k,n,π)):", pbinom(k, n, pi)))
+  }
+  if (type == "q") {
+    return (paste(prob*100, "% kvantil v R (qbinom(prob,n,π)): ", qbinom(prob, n, pi), sep = ""))
+  }
+}
+
+# stredni hodnota
+BIN_E <- function(n, pi) {
+  return (paste("Stredni hodnota:", n * pi))
+}
+
+# rozptyl
+BIN_D <- function(n, pi) {
+  return (paste("Rozptyl:", n * pi * (1 - pi)))
+}
+```
+
+### Použití
+
+$$
+X \sim Bi(n; \pi)
+$$
+
+```{r}
+n = 10      # počet pokusů
+pi = 0.4    # pravděpodobnost úspěchu
+k = 3       # hodnota nabývající náhodné veličiny ze zadání
+prob = 0.1
+
+BIN("q", k, n, pi, prob)
+BIN_E(n, pi)
+BIN_D(n, pi)
+
+# --------- #
+
+pos = 2    # pozice čísel (1 = dole, 3 = nahoře)
+
+BIN_PF(n, pi, pos)
+BIN_DF(n, pi)
+```
+
+### Hypergeometrické rozdělení
+
+```{r}
+# pravdepodobnostni funkce
+HYPER_PF <- function(to, N, M, n, pos) {
+  P_x = dhyper(0:to, M, N - M, n)
+  plot(0:to, P_x, type="p",
+       xlab="nahodna velicina", ylab="pravdepodobnost", 
+       main="Pravdepodobnosti funkce",pch=19)
+  text(0:to, P_x, paste(0:to,";",round(P_x, digits=2),sep=""), pos=pos)
+  grid()
+  P_x = round(P_x, 3)
+  P_x[to + 1] = 1 - sum(P_x[1:to])
+  tab = rbind(0:to, P_x)
+  rownames(tab) = c("x", "P(x)")
+  tab
+}
+
+# distribucni funkce
+HYPER_DF <- function(to, N, M, n) {
+  P_x = dhyper(0:to, M, N - M, n)
+  F_x = cumsum(P_x)
+  plot(0:to, F_x, type="s",
+       xlab="nahodna velicina", ylab="pravdepodobnost", 
+       main="Distribucni funkce")
+  grid()
+  F_x = round(F_x, 3)
+  F_x[to + 1] = 1 - sum(F_x[1:to])
+  tab = rbind(0:to, F_x)
+  rownames(tab) = c("x", "F(x)")
+  tab
+}
+
+# vypocetni funkce
+HYPER <- function(type, k, N, M, n, prob) {
+  if (type == "=") {
+    return (paste("Pravdepodobnost v R (dhyper(k,M,N-M,n)):", dhyper(k, M, N - M, n)))
+  }
+  if (type == "<") {
+    return (paste("Pravdepodobnost v R (phyper(k,M,N-M,n)):", phyper(k, M, N - M, n)))
+  }
+  if (type == "q") {
+    return (paste(prob*100, "% kvantil v R (qhyper(prob,M,N-M,n)): ", qhyper(prob, M, N - M, n), sep = ""))
+  }
+}
+
+# stredni hodnota
+HYPER_E <- function(n, N, M) {
+  return (paste("Stredni hodnota:", n * (M / N)))
+}
+
+# rozptyl
+HYPER_D <- function(n, N, M) {
+  return (paste("Rozptyl:", n * (M / N) * (1 - M / N) * ((N - n) / (N - 1))))
+}
+```
+
+### Použití
+
+$$
+X \sim H(N; M; n)
+$$
+
+```{r}
+
+N = 10     # počet prvků v souboru
+M = 8      # počet prvků s dannou vlastností  
+n = 2      # počet vybíraných prvků
+k = 2       # hodnota nabývající náhodné veličiny za zadání
+prob = 0.5
+
+HYPER("q", k, N, M, n, prob)
+HYPER_E(n, N, M)
+HYPER_D(n, N, M)
+
+# --------- #
+
+pos = 1     # pozice čísel (1 = dole, 3 = nahoře)
+
+HYPER_PF(n, N, M, n, pos)
+HYPER_DF(n, N, M, n)
+```
+
+### Negativně binomické
+
+```{r}
+# pravdepodobnostni funkce
+NBIN_PF <- function(to, k, prob, pos) {
+  P_x = dnbinom((0:to) - k, k, prob)
+  plot(0:to, P_x, type="p",
+       xlab="nahodna velicina", ylab="pravdepodobnost", 
+       main="Pravdepodobnosti funkce",pch=19)
+  text(0:to, P_x, paste(0:to,";",round(P_x, digits=2),sep=""), pos=pos)
+  grid()
+  P_x = round(P_x, 3)
+  P_x[to + 1] = 1 - sum(P_x[1:to])
+  tab = rbind(0:to, P_x)
+  rownames(tab) = c("x", "P(x)")
+  tab
+}
+
+# distribucni funkce
+NBIN_DF <- function(to, k, prob) {
+  P_x = dnbinom((0:to) - k, k, prob)
+  F_x = cumsum(P_x)
+  plot(0:to, F_x, type="s",
+       xlab="nahodna velicina", ylab="pravdepodobnost", 
+       main="Distribucni funkce")
+  grid()
+  F_x = round(F_x, 3)
+  F_x[to + 1] = 1 - sum(F_x[1:to])
+  tab = rbind(0:to, F_x)
+  rownames(tab) = c("x", "F(x)")
+  tab
+}
+
+# vypocetni funkce
+NBIN <- function(type, k, K, pi, prob) {
+  if (type == "=") {
+    return (paste("Pravdepodobnost v R (dnbinom(k-K,K,π)):", dnbinom(k - K, K, pi)))
+  }
+  if (type == "<") {
+    return (paste("Pravdepodobnost v R (pnbinom(k-K,K,π)):", pnbinom(k - K, K, pi)))
+  }
+  if (type == "q") {
+    return (paste(prob*100, "% kvantil v R (qnbinom(prob,K,π)): ", qnbinom(prob, K, pi) + K, sep = ""))
+  }
+}
+
+# stredni hodnota
+NBIN_E <- function(K, pi) {
+  return (paste("Stredni hodnota:", K / pi))
+}
+
+# rozptyl
+NBIN_D <- function(K, pi) {
+  return (paste("Rozptyl:", (K * (1 - pi)) / (pi * pi)))
+}
+```
+
+### Použití
+
+$$
+X \sim NB(K; \pi)
+$$
+
+```{r}
+K = 1       # požadovaný kátý pokus ze zadání
+pi = 0.08   # pravděpodobnost úspěchu pokusu
+k = 5       # počet pokusů pro hledanou pravděpodobnost
+prob = 0.5
+
+NBIN("<", k, K, pi, prob)
+NBIN_E(K, pi)
+NBIN_D(K, pi)
+
+# --------- #
+
+pos = 3     # pozice čísel (1 = dole, 3 = nahoře)
+count = 5  # zobrazení hodnot náhodné veličiny
+
+NBIN_PF(count, K, pi, pos)
+NBIN_DF(count, K, pi)
+```
+
+### Poissonovo rozdělení
+
+```{r}
+# pravdepodobnostni funkce
+POIS_PF <- function(to, lambda, t, pos) {
+  P_x = dpois(0:to, lambda * t)
+  plot(0:to, P_x, type="p",
+       xlab="nahodna velicina", ylab="pravdepodobnost", 
+       main="Pravdepodobnosti funkce",pch=19)
+  text(0:to, P_x, paste(0:to,";",round(P_x, digits=2),sep=""), pos=pos)
+  grid()
+  P_x = round(P_x, 3)
+  P_x[to + 1] = 1 - sum(P_x[1:to])
+  tab = rbind(0:to, P_x)
+  rownames(tab) = c("x", "P(x)")
+  tab
+}
+
+# distribucni funkce
+POIS_DF <- function(to, lambda, t) {
+  P_x = dpois(0:to, lambda * t)
+  F_x = cumsum(P_x)
+  plot(0:to, F_x, type="s",
+       xlab="nahodna velicina", ylab="pravdepodobnost", 
+       main="Distribucni funkce")
+  grid()
+  F_x = round(F_x, 3)
+  F_x[to + 1] = 1 - sum(F_x[1:to])
+  tab = rbind(0:to, F_x)
+  rownames(tab) = c("x", "F(x)")
+  tab
+}
+
+# vypocetni funkce
+POIS <- function(type, k, lambda, t, prob) {
+  if (type == "=") {
+    return (paste("Pravdepodobnost v R (dpois(k,λ*t)):", dpois(k, lambda * t)))  
+  }
+  if (type == "<") {
+    return (paste("Pravdepodobnost v R (ppois(k,λ*t)):", ppois(k, lambda * t)))  
+  }
+  if (type == "q") {
+    return (paste(prob*100, "% kvantil v R (qpois(prob,λ*t)):", qpois(prob, lambda * t), sep = ""))
+  }
+}
+
+# stredni hodnota
+POIS_E <- function(lambda, t) {
+  return (paste("Stredni hodnota:", lambda * t))
+}
+
+# rozptyl
+POIS_D <- function(lambda, t) {
+  return (paste("Rozptyl:", lambda * t))
+}
+```
+
+### Použití
+
+$$
+X \sim Po(\lambda * t)
+$$
+
+```{r}
+lambda = 1/50    # pravděpodobnost výskytu ke kontextu plochy nebo času
+t = 100            # velikost uzavřené plochy, časová doba
+k = 3         # počet pokusů pro hledanou pravděpodobnost
+prob = 0.5
+
+POIS("<", k, lambda, t, prob)
+POIS_E(lambda, t)
+POIS_D(lambda, t)
+
+# --------- #
+
+pos = 3     # pozice čísel (1 = dole, 3 = nahoře)
+count = 20  # zobrazení hodnot náhodné veličiny
+
+POIS_PF(count, lambda, t, pos)
+POIS_DF(count, lambda, t)
+```

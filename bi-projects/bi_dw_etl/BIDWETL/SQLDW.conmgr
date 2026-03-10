@@ -1,0 +1,22 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="SQLDW"
+  DTS:DTSID="{C58068DD-1191-4144-AD65-979852696497}"
+  DTS:CreationName="OLEDB">
+  <DTS:PropertyExpression
+    DTS:Name="InitialCatalog">@[$Project::SQLDW_InitialCatalog1]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="Password">@[$Project::SQLDW_Password1]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="UserName">@[$Project::SQLDW_UserName1]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=dbsys.cs.vsb.cz\sqldb;User ID=JAV0032;Initial Catalog=JAV0032;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-BIDWETL-{C58068DD-1191-4144-AD65-979852696497}dbsys.cs.vsb.cz\sqldb.MOY001.MOY001;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbcA6hoaoJEuIVmOktQxqyQAAAAACAAAAAAAQZgAAAAEAACAAAACyCm2Su23UhI9zsrHhcactVF1UTkrS7NCKyb57KhPu+gAAAAAOgAAAAAIAACAAAABPlb4lyL1QXdxbCRyYVfy0SXhsmujRktENtR/pvJ5x1IAAAADefUEFR5s7PhmkUQKamERLa5mf+/22QTJJaF0FmXyaVOsF+471VAQ9nhShesHbchsclir57gcrZR/YJPxicYUmbUKdfpkItTxstM5BL8KJynX2tkEc68dO8vDqgDtTrCSfT72+XcsLMjUzOXpt/xz0LrYAc3gT6/Nx4drLl29X2UAAAAA+xTREFkUtCdv8SyepoGzJPMSi331j05b2La+AYJAbo2BCPRaOnfAFDa6jDWLuHcyX+aIesbB36QwUhMvHTbJ6</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
