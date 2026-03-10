@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="delivery.controllers.NewDriveSceneController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Možnosti">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Ukončit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Výběr pohledu">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Zákazník" />
+                  <MenuItem mnemonicParsing="false" text="Zaměstnanec" />
+                  <MenuItem mnemonicParsing="false" text="Předák" />
+                  <MenuItem mnemonicParsing="false" text="Admin" />
+            </items>
+          </Menu>
+            <Menu fx:id="userMenu" mnemonicParsing="false" text="Zákazník">
+              <items>
+                <MenuItem fx:id="userLogout" mnemonicParsing="false" text="Odhlásit" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Separator orientation="VERTICAL" prefHeight="340.0" prefWidth="0.0" />
+            <VBox prefHeight="326.0" prefWidth="232.0">
+               <children>
+                  <Label text="Dostupné jízdy">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Segoe UI Semibold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="drives" prefHeight="254.0" prefWidth="178.0">
+                    <columns>
+                      <TableColumn fx:id="rentalTime" prefWidth="75.0" text="Čas zahájení" />
+                      <TableColumn fx:id="returnTime" prefWidth="81.0" text="Čas ukončení" />
+                        <TableColumn fx:id="vehicle" prefWidth="70.0" text="Vozidlo" />
+                    </columns>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TableView>
+               </children>
+            </VBox>
+            <VBox prefHeight="326.0" prefWidth="206.0">
+               <children>
+                  <Label text="Dostupná vozidla">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Segoe UI Semibold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="vehicles" prefHeight="254.0" prefWidth="169.0">
+                    <columns>
+                      <TableColumn fx:id="brand" prefWidth="60.0" text="Značka" />
+                      <TableColumn fx:id="type" prefWidth="55.0" text="Typ" />
+                        <TableColumn fx:id="restaurant" prefWidth="85.0" text="Restaurace" />
+                    </columns>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+   <left>
+      <VBox prefHeight="326.0" prefWidth="6.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <HBox prefHeight="326.0" prefWidth="161.0" BorderPane.alignment="CENTER">
+         <children>
+            <Separator orientation="VERTICAL" prefHeight="321.0" prefWidth="5.0" />
+            <VBox prefHeight="321.0" prefWidth="213.0">
+               <children>
+                  <Label text="Nová jízda">
+                     <VBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Segoe UI Semibold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label text="Zaměstnanec">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ChoiceBox fx:id="employeeChoice" prefWidth="150.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ChoiceBox>
+                  <Label text="Vozidlo">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ChoiceBox fx:id="vehicleChoice" prefWidth="150.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ChoiceBox>
+                  <Button mnemonicParsing="false" onAction="#createNewDrive" text="Vytvořit">
+                     <VBox.margin>
+                        <Insets left="90.0" top="30.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </right>
+   <bottom>
+      <VBox prefHeight="49.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Separator prefHeight="0.0" prefWidth="600.0" />
+            <Button mnemonicParsing="false" onAction="#close" text="Zpět">
+               <VBox.margin>
+                  <Insets left="525.0" top="3.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Segoe UI Semibold" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Map_OptionsMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:textColor">@color/frost_white</item>
+        <item name="android:itemBackground">@color/light_blue</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Theme.InteractiveMap.SlidrActivityTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="MapScreen_NavTheme" parent="Theme.InteractiveMap">
+        <item name="android:textSize">25dp</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/frost_white</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+</resources>

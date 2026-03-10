@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mapScreenDrawerMenu"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/grp1">
+        <item android:id="@+id/mapScreen_userName"
+            android:title="@string/userName" />
+        <item android:id="@+id/mapScreen_userId"
+            android:title="@string/userId" />
+    </group>
+
+    <item android:id="@+id/mapScreen_userFocus"
+        android:title="@string/userFocus" />
+
+    <item android:id="@+id/mapScreen_addTeam"
+        android:title="Team: empty" />
+
+    <group android:id="@+id/grp3">
+        <item android:id="@+id/modifyNav_shareMap"
+            android:icon="@drawable/ic_baseline_send_24"
+            android:title="Share map" />
+        <item android:id="@+id/modifyNav_saveMap"
+            android:icon="@drawable/ic_baseline_save_24"
+            android:title="Save map" />
+        <item android:id="@+id/modifyNav_loadMap"
+            android:icon="@drawable/ic_baseline_cloud_download_24"
+            android:title="Load map" />
+    </group>
+</menu>

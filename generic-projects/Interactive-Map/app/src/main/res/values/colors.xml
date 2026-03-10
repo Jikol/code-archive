@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rusty_gold">#B5996C</color>
+    <color name="dark_blue">#213138</color>
+    <color name="light_blue">#37505B</color>
+    <color name="frost_white">#F5F5F5</color>
+    <color name="light_black">#3C3C3B</color>
+    <color name="black">#242424</color>
+</resources>

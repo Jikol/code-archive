@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="row justify-content-center account-change-form">
+        <div class="col-sm-8 account-change-card">
+            <form method="POST">
+                {% csrf_token %}
+                <div class="form-group">
+                    <h3 class="pb-1 account-change-form-header">Změna údajů</h3>
+                    {% for field in account_form %}
+                        <input type="{{ field.field.help_text }}" name="{{ field.html_name }}" placeholder="{{ field.value }}" class="form-control account-{{ field.html_name }}" id="{{ field.id_for_label }}">
+                        <label for="{{ field.id_for_label }}" class="{{ field.id_for_label }}">{{ field.label }}</label>
+                        {% for error in field.errors %}
+                            <small class="error-text-account">{{ error }}</small>
+                        {% endfor %}
+                    {% endfor %}
+                    {% if account_form.non_field_errors %}
+                        <div>
+                            <small class="error-text-account">{{ account_form.non_field_errors }}</small>
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    <div class="row justify-content-end">
+                        <button type="submit" name="account" class="btn btn-primary btn-register">Uložit změny</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-4 photo-card-change-account">
+        </div>
+    </div>
+{% endblock content %}
+

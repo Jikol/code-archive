@@ -1,0 +1,36 @@
+{
+  "name": "pantilt",
+  "version": "1.0.0",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "dev": "rimraf dist && concurrently --kill-others \"yarn run copy-dist\" \"yarn parcel index.html\"",
+    "build": "rimraf www && yarn parcel build index.html --public-url ./ && yarn run copy-www",
+    "copy-dist": "copy-and-watch --watch config/config.js dist/config",
+    "copy-www": "copy-and-watch config/config.js www/config",
+    "scss": "node-sass --watch css/style.scss -o css"
+  },
+  "dependencies": {
+    "paho-mqtt": "^1.1.0",
+    "sass": "^1.32.2"
+  },
+  "devDependencies": {
+    "@parcel/config-default": "^2.0.0",
+    "@parcel/core": "^2.0.0",
+    "@babel/plugin-transform-react-jsx": "^7.16.7",
+    "concurrently": "^6.1.0",
+    "copy-and-watch": "^0.1.5",
+    "parcel": "^2.0.0",
+    "parcel-namer-own": "file:plugins/parcel-namer-own",
+    "parcel-resolver-own": "file:plugins/parcel-resolver-own",
+    "rimraf": "^3.0.2"
+  },
+  "targets": {
+    "default": {
+      "distDir": "www"
+    }
+  },
+  "browserslist": [
+    "> 0.5%, last 2 versions, not dead"
+  ]
+}

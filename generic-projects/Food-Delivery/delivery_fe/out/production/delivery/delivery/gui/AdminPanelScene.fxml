@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="delivery.controllers.AdminController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Možnosti">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Ukončit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Výběr pohledu">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#showCustomerAuth" text="Zákazník" />
+                  <MenuItem mnemonicParsing="false" text="Zaměstnanec" />
+                  <MenuItem mnemonicParsing="false" text="Předák" />
+                  <MenuItem mnemonicParsing="false" text="Admin" />
+            </items>
+          </Menu>
+            <Menu fx:id="userMenu" mnemonicParsing="false" text="Zákazník">
+              <items>
+                <MenuItem fx:id="userLogout" mnemonicParsing="false" text="Odhlásit" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <VBox prefHeight="318.0" prefWidth="169.0" style="-fx-border-style: solid; -fx-border-width: 0 1 0 0; -fx-border-color: grey;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="170.0" prefWidth="169.0" style="-fx-background-color: rgb(250, 250, 250);">
+               <children>
+                  <Label alignment="CENTER" prefHeight="33.0" prefWidth="169.0" style="-fx-background-color: rgb(230, 230, 230);" text="JÍZDY">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#showNewDrive" prefWidth="138.0" text="Vytvořit jízdu">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox prefHeight="170.0" prefWidth="169.0" style="-fx-background-color: rgb(250, 250, 250);">
+               <children>
+                  <Label alignment="CENTER" prefHeight="33.0" prefWidth="173.0" style="-fx-background-color: rgb(237, 237, 237);" text="RESTAURACE">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="134.0" text="Nová restaurace">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="134.0" text="Změnit restauraci">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="134.0" text="Odstranit restauraci">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <bottom>
+      <HBox prefHeight="45.0" prefWidth="600.0" style="-fx-background-color: rgb(250, 250, 250); -fx-border-style: solid; -fx-border-color: grey; -fx-border-width: 1 0 0 0;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="169.0" style="-fx-background-color: rgb(237, 237, 237);" text="ADMIN">
+               <font>
+                  <Font name="Segoe UI Semibold" size="14.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="29.0" prefWidth="114.0" text="Změnit heslo">
+               <font>
+                  <Font name="Segoe UI Semibold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="19.0" right="8.0" top="8.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

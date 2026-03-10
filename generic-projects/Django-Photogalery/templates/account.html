@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="row justify-content-center account-form">
+        <div class="col-sm-4 photo-card-account">
+        </div>
+        <div class="col-sm-8 account-card">
+            <div class="row justify-content-center">
+                <div class="col-sm-8 account-credentials">
+                    <p>
+                        <h3 class="account-header"><i class="far fa-envelope"></i> Email</h3>
+                        <div class="account-data">
+                            {{ user.email }}
+                        </div>
+                    </p>
+                    <p>
+                        <h3 class="account-header"><i class="far fa-user"></i> Jméno</h3>
+                        <div class="account-data">
+                            {% if user.name != '' %}
+                                {{ user.name }}
+                            {% else %}
+                                (neuvedeno)
+                            {% endif %}
+                        </div>
+                    </p>
+                    <p>
+                        <h3 class="account-header"><i class="far fa-user"></i> Příjmení</h3>
+                        <div class="account-data">
+                            {% if user.name != '' %}
+                                {{ user.name }}
+                            {% else %}
+                                (neuvedeno)
+                            {% endif %}
+                        </div>
+                    </p>
+                    <p>
+                        <h3 class="account-header"><i class="far fa-calendar-plus"></i> Datum registrace</h3>
+                        <div class="account-data">
+                            {{ user.date_joined|date:'d.m.Y' }}
+                        </div>
+                    </p>
+                </div>
+                <div class="col-sm-4 account-admin">
+                     <p>Admin</p>
+                    {% if admin %}
+                        <i class="fas fa-check-circle admin-ok"></i>
+                    {% else %}
+                        <i class="fas fa-times-circle admin-not"></i>
+                    {% endif %}
+                    <div class="my-images">
+                        <a class="btn btn-my-images" href="{% url 'image_upload' %}">Uprav <i class="fas fa-images my-images-icon"></i></a>
+                    </div>
+                    <div class="image-upload">
+                        <a class="btn btn-image-upload" href="{% url 'image_upload' %}">Nahraj <i class="far fa-file-image image-upload-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row justify-content-center">
+                <a class="btn btn-account-change" href="{% url 'account_change' %}">Změna údajů</a>
+                <a class="btn btn-account-change" href="{% url 'password_change' %}">Změna hesla</a>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

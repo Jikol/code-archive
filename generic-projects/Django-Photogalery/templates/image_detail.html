@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="row justify-content-end image-detail-form">
+        <div class="col-sm-7 image-detail-image">
+            <img class="detail-image" src="{{ image.image.url }}">
+        </div>
+        <div class="col-sm-5 image-detail-card">
+            <div class="image-detail">
+                <h4 class="image-detail-label">Titulek</h4>
+                {{ image.title }}
+            </div>
+            <div class="image-detail">
+                <h4 class="image-detail-labe">Popis</h4>
+                {{ image.desc }}
+            </div>
+            <div class="image-detail">
+                <h4 class="image-detail-labe">Veřejný</h4>
+                {{ image.public }}
+            </div>
+            {% if image.user != request.user %}
+                <div class="image-detail">
+                    <h4 class="image-detail-labe">Vlastník</h4>
+                    {{ image.user }}
+                </div>
+            {% endif %}
+            <div class="image-detail">
+                <h4 class="image-detail-labe">Datum nahrání</h4>
+                {{ image.date_uploaded }}
+            </div>
+            <div class="image-detail">
+                <h4 class="image-detail-labe">Datum poslední úpravy</h4>
+                {{ image.date_uploaded }}
+            </div>
+        </div>
+    </div>
+{% endblock content %}

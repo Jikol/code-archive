@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="delivery.controllers.OrderDetailSceneController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Možnosti">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Ukončit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Výběr pohledu">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Zákazník" />
+                  <MenuItem mnemonicParsing="false" text="Zaměstnanec" />
+                  <MenuItem mnemonicParsing="false" text="Předák" />
+                  <MenuItem mnemonicParsing="false" text="Admin" />
+            </items>
+          </Menu>
+            <Menu fx:id="userMenu" mnemonicParsing="false" text="Zákazník">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Odhlásit" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="334.0" prefWidth="314.0">
+               <children>
+                  <TitledPane animated="false" prefHeight="180.0" prefWidth="313.0" text="Restaurace">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <GridPane prefHeight="142.0" prefWidth="313.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="Jméno: " />
+                                    <Label text="Popis" GridPane.rowIndex="1" />
+                                    <Label text="Hodnocení:" GridPane.rowIndex="2" />
+                                    <Label fx:id="name" GridPane.columnIndex="1" />
+                                    <Label fx:id="desc" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label fx:id="rating" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </TitledPane>
+                  <TitledPane animated="false" prefHeight="180.0" prefWidth="287.0" text="Objednávka">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <GridPane prefHeight="142.0" prefWidth="313.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="Čas vytvoření: " />
+                                    <Label text="Čas předání: " GridPane.rowIndex="1" />
+                                    <Label text="Očekávaný čas doručení: " GridPane.rowIndex="2" />
+                                    <Label fx:id="creationTime" GridPane.columnIndex="1" />
+                                    <Label fx:id="handoverTime" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label fx:id="deliveryTime" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </TitledPane>
+               </children>
+            </VBox>
+            <VBox prefHeight="334.0" prefWidth="326.0">
+               <children>
+                  <TitledPane fx:id="dishesContainer" animated="false" prefHeight="349.0" prefWidth="306.0" text="Pokrmy">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      </AnchorPane>
+                    </content>
+                  </TitledPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+   <bottom>
+      <HBox prefHeight="51.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="sumPrice" prefHeight="51.0" prefWidth="148.0" text="Celková cena :">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </Label>
+            <Button alignment="CENTER_RIGHT" contentDisplay="CENTER" mnemonicParsing="false" onAction="#close" text="Zpět">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="360.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

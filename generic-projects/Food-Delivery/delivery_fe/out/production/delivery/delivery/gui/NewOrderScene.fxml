@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="delivery.controllers.NewOrderSceneController">
+   <top>
+      <VBox prefHeight="69.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="Možnosti">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Ukončit" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Výběr pohledu">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Zákazník" />
+                        <MenuItem mnemonicParsing="false" text="Zaměstnanec" />
+                        <MenuItem mnemonicParsing="false" text="Předák" />
+                        <MenuItem mnemonicParsing="false" text="Admin" />
+                  </items>
+                </Menu>
+                  <Menu fx:id="userMenu" mnemonicParsing="false" text="Zákazník">
+                    <items>
+                      <MenuItem fx:id="userLogout" mnemonicParsing="false" text="Odhlásit" />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="44.0" prefWidth="149.0" text="Vyber restauraci:">
+                     <HBox.margin>
+                        <Insets left="38.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ChoiceBox fx:id="restaurantChoice" prefHeight="25.0" prefWidth="165.0">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin></ChoiceBox>
+                  <VBox prefHeight="44.0" prefWidth="360.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="270.0">
+                           <children>
+                              <Label prefHeight="22.0" prefWidth="75.0" text="Typ kuchyně: " />
+                              <Label fx:id="foodType" prefHeight="22.0" prefWidth="87.0">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin></Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="24.0" prefWidth="69.0" text="Hodnocení:" />
+                              <Label fx:id="rating" prefHeight="22.0" prefWidth="91.0">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin></Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children></HBox>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox prefHeight="277.0" prefWidth="418.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="actualDishes" prefHeight="278.0" prefWidth="522.0">
+               <columns>
+                  <TableColumn fx:id="nameColumn" maxWidth="85.0" minWidth="85.0" prefWidth="85.0" resizable="false" text="Název" />
+                  <TableColumn fx:id="weightColumn" maxWidth="85.0" minWidth="85.0" prefWidth="85.0" resizable="false" text="Váha" />
+                  <TableColumn fx:id="priceColumn" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" resizable="false" text="Cena" />
+                  <TableColumn fx:id="amountColumn" prefWidth="75.0" text="Počet" />
+                  <TableColumn fx:id="addColumn" prefWidth="55.20001220703125" />
+                  <TableColumn fx:id="removeColumn" prefWidth="63.20002441406251" />
+                  <TableColumn fx:id="idColumn" prefWidth="75.0" text="Column X" />
+               </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+   <right>
+      <VBox prefHeight="277.0" prefWidth="127.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Vyber typ platby" />
+            <ComboBox fx:id="paymentType" prefWidth="150.0" />
+            <Label text="Dýško" />
+            <TextField fx:id="tip" />
+         </children></VBox>
+   </right>
+   <bottom>
+      <HBox prefHeight="53.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="53.0" prefWidth="193.0" text="Celková cena objednávky :  ">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="totalPrice" prefHeight="53.0" prefWidth="109.0" />
+            <Button mnemonicParsing="false" onAction="#createNewOrder" text="Vytvořit objednávku">
+               <HBox.margin>
+                  <Insets left="75.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#close" text="Zpět">
+               <HBox.margin>
+                  <Insets left="30.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <left>
+      <VBox prefHeight="278.0" prefWidth="36.0" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>

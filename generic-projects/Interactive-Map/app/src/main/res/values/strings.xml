@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Interactive Map</string>
+    <string name="access_token">YOUR_MAPBOX_ACCESS_TOKEN_HERE</string>
+
+    <string name="location_permission_explanation">You need allow your location</string>
+    <string name="location_permission_not_granted">Location permissions not granted</string>
+
+    <string name="mainScreen_header">Interactive map</string>
+    <string name="userName"></string>
+    <string name="userFocus"></string>
+    <string name="userId"></string>
+</resources>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="delivery.controllers.MainSceneController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Možnosti">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Ukončit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Výběr pohledu">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Zákazník" />
+                  <MenuItem mnemonicParsing="false" text="Zaměstnanec" />
+                  <MenuItem mnemonicParsing="false" text="Předák" />
+                  <MenuItem mnemonicParsing="false" onAction="#showAdminAuth" text="Admin" />
+            </items>
+          </Menu>
+            <Menu fx:id="userMenu" mnemonicParsing="false" text="Zákazník">
+              <items>
+                <MenuItem fx:id="userLogout" mnemonicParsing="false" onAction="#userLogout" text="Odhlásit" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <VBox prefHeight="318.0" prefWidth="169.0" style="-fx-border-style: solid; -fx-border-width: 0 1 0 0; -fx-border-color: grey;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="170.0" prefWidth="169.0" style="-fx-background-color: rgb(250, 250, 250);">
+               <children>
+                  <Label alignment="CENTER" prefHeight="33.0" prefWidth="169.0" style="-fx-background-color: rgb(230, 230, 230);" text="OBJEDNÁVKY">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#showNewOrder" prefWidth="138.0" text="Vytvořit objendávku">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" prefWidth="138.0" text="Změnit objednávku">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" prefWidth="138.0" text="Zrušit objednávku">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox prefHeight="170.0" prefWidth="169.0" style="-fx-background-color: rgb(250, 250, 250);">
+               <children>
+                  <Label alignment="CENTER" prefHeight="33.0" prefWidth="173.0" style="-fx-background-color: rgb(237, 237, 237);" text="HODNOCENÍ">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="134.0" text="Vytvořit hodnocení">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="134.0" text="Změnit hodnocení">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="134.0" text="Moje hodnocení">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <bottom>
+      <HBox prefHeight="45.0" prefWidth="600.0" style="-fx-background-color: rgb(250, 250, 250); -fx-border-style: solid; -fx-border-color: grey; -fx-border-width: 1 0 0 0;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="169.0" style="-fx-background-color: rgb(237, 237, 237);" text="ZÁKAZNÍK">
+               <font>
+                  <Font name="Segoe UI Semibold" size="14.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="29.0" prefWidth="114.0" text="Změnit údaje">
+               <font>
+                  <Font name="Segoe UI Semibold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="19.0" right="8.0" top="8.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="29.0" prefWidth="110.0" text="Profil" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Semibold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="8.0" right="8.0" top="8.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="29.0" prefWidth="149.0" text="Všechny objednávky" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Semibold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="8.0" right="8.0" top="8.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="36.0" prefWidth="431.0">
+               <children>
+                  <Label prefHeight="32.0" prefWidth="207.0" style="-fx-background-color: rgb(250, 250, 250);" text="AKTUÁLNÍ OBJEDNÁVKY">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="customerLabel" prefHeight="33.0" prefWidth="218.0" style="-fx-background-color: rgb(250, 250, 250);" text="Zákazník:">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <TableView fx:id="actualOrders" prefHeight="302.0" prefWidth="431.0">
+              <columns>
+                <TableColumn fx:id="creationColumn" maxWidth="85.0" minWidth="85.0" prefWidth="85.0" resizable="false" text="Vytvoření" />
+                <TableColumn fx:id="handoverColumn" maxWidth="85.0" minWidth="85.0" prefWidth="85.0" resizable="false" text="Předání" />
+                  <TableColumn fx:id="paymentColumn" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" resizable="false" text="Platba" />
+                  <TableColumn fx:id="restaurantColumn" maxWidth="117.0" minWidth="117.0" prefWidth="117.0" resizable="false" text="Restaurace" />
+                  <TableColumn fx:id="detailColumn" maxWidth="73.0" minWidth="73.0" prefWidth="73.0" resizable="false" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

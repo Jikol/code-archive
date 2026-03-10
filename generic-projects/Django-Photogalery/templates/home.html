@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="row pt-3 justify-content-start">
+        {% for image in images %}
+            {% if image.public %}
+                <div class="table-image-wrap">
+                    <a class="table-image-link" href="{% url 'detail_image' image.slug %}">
+                        <img class="table-image" id="{{ image.id }}" src="{{ image.thumbnail.url }}">
+                    </a>
+                </div>
+                <div class="table-image-card"></div>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock content %}
+

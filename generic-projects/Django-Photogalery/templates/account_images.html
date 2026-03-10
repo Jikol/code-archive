@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="row pt-3 justify-content-start">
+        {% if images %}
+            {% for image in images %}
+                <div class="table-image-wrap">
+                    <a class="table-image-link" href="{% url 'detail_image' image.slug %}">
+                        <img class="table-image" id="{{ image.id }}" src="{{ image.image.url }}">
+                    </a>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>
+                Nemáš zatím nahrané žádné fotky, <a href="{% url 'image_upload' %}">nahraj</a> nějaké nyní!
+            </p>
+        {% endif %}
+    </div>
+{% endblock content %}

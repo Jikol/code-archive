@@ -1,0 +1,103 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <style>
+            body {
+                background-image: url("{% static 'background/email-pattern.png' %}")
+            }
+        </style>
+        {% if title %}
+            <title>{{ title }}</title>
+        {% else %}
+            <title>Title</title>
+        {% endif %}
+    </head>
+    <body>
+        <header class="site-header">
+            <nav class="navbar navbar-expand-md py-2 navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <div class="navbar-brand-texts">
+                    <p id="navbar-brand-text">Projekt</p>
+                    <a class="navbar-brand smooth-scroll" href="{% url 'home' %}">Fotoalbum</a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarToggle">
+                        <div class="navbar-nav navbar-main">
+                            <div class="navbar-spacer"></div>
+                            <a class="nav-item nav-link" href="{% url 'account_images' %}">Moje Album</a>
+                        </div>
+                        {% if request.user.is_authenticated %}
+                            <div class="navbar-nav navbar-login ml-auto">
+                                <a class="btn btn-image-upload-base" href="{% url 'image_upload' %}">Nahraj <i class="fas fa-image image-upload-icon"></i></a>
+                                <div class="navbar-spacer"></div>
+                                <a class="nav-item nav-link" href="{% url 'account' %}">{{ request.user }}</a>
+                                <a class="nav-item nav-link" href="{% url 'logout' %}">Odhlásit</a>
+                            </div>
+                        {% else %}
+                            <div class="navbar-nav navbar-login ml-auto">
+                                <a class="btn btn-image-upload-base" href="{% url 'image_upload' %}">Nahraj <i class="fas fa-image image-upload-icon"></i></a>
+                                <div class="navbar-spacer"></div>
+                                <a tabindex="0" class="nav-item nav-link login-popover" data-placement="bottom" data-toggle="popover">Přihlášení</a>
+                                <a class="nav-item nav-link" href="{% url 'register' %}">Registrace</a>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                {% block content %}{% endblock %}
+            </div>
+        </main>
+        <footer>
+            <div class="footer-site">
+                <hr>
+                <p>Fotoalbum | 2019</p>
+                <div class="row justify-content-right">
+                    <div class="message-content">
+                        {% if messages %}
+                            {% for message in messages %}
+                                <div class="toast" role="alert" aria-live="polite" aria-atomic="true" data-delay="4000">
+                                    <div class="toast-header">
+                                        <strong class="mr-auto">
+                                            {% if message.tags == 'success' %}
+                                                Úspěch
+                                            {% elif message.tags == 'warning' %}
+                                                Varování
+                                            {% elif message.tags == 'error' %}
+                                                Chyba
+                                            {% endif %}
+                                        </strong>
+                                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="toast-body myalert-{{ message.tags }}">
+                                        {{ message }}
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/782f95251d.js" crossorigin="anonymous"></script>
+        <script src="{% static 'js/script.js' %}"></script>
+    </body>
+</html>
+
+{% include "login.html" %}
